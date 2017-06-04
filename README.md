@@ -32,15 +32,15 @@ __Master merge on agreement__
 ## Ben Questions
 __Ethernet Pin Outs__
 
-__i2c stress test how did that good?__ 
+__i2c stress test how did that go?__ 
 
-__Are the buses full and will this change the PCB design?__
+__Are the i2c buses full and will this change the PCB design?__
 
 __Do we need Pull up resistors on the bus?__
 
-__Measure the diameter of the vin+ and vin- pins?__
+__Measure the diameter of power board vin+ and vin- pins__
 
-__Pin out on the par converters i.e. vin, gnd, vout+, vout-?__
+__Pin out on the par converters i.e. vin, gnd, vout+, vout-__
 
 __Details on what extra screw terminals we need and how you want them arranged?__
 
