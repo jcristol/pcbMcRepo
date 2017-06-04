@@ -5,7 +5,10 @@ A hearty and fully functional meal from the fryer of Texas Guadaloop Industries 
 
 ## Work Division
 #3 branch 
-#-Cody
-#-Josh
-#-Master merge on agreement
+
+#Cody
+
+#Josh
+
+#Master merge on agreement
 
