@@ -4,11 +4,11 @@ A hearty and fully functional meal from the fryer of Texas Guadaloop Industries 
 ### [Google Doc](https://docs.google.com/document/d/14EoQXWibSE1bEbYZ6znybRfnlsqGPjPEWS3_kOOsmus/edit)
 
 ## Work Division
-#3 branch 
+__3 branch__ 
 
-#Cody
+__Cody__
 
-#Josh
+__Josh__
 
-#Master merge on agreement
+__Master merge on agreement__
 
