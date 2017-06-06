@@ -1456,8 +1456,6 @@ Text Notes 4500 1800 0    60   ~ 0
 right side
 Text Notes 4300 4200 0    60   ~ 0
 left side
-Text Notes 21200 8850 0    60   ~ 0
-just power and ground for the extra actuator
 $Comp
 L relay RE8
 U 1 1 58DD065A
@@ -1688,8 +1686,8 @@ Text GLabel 22450 7150 2    30   Input ~ 0
 5V
 Text GLabel 21000 7000 0    30   Input ~ 0
 sense_pwr_coil-
-Text Notes 20750 5200 0    60   ~ 0
-non tof power toggle
+Text Notes 20750 5200 0    100  ~ 20
+Sense PWR toggle
 Text GLabel 1150 9750 0    30   Input ~ 0
 DGND
 Text GLabel 1150 9850 0    30   Input ~ 0
@@ -1805,62 +1803,16 @@ NoConn ~ 5600 10350
 Text Notes 750  9200 0    60   ~ 0
 RJ45's
 $Comp
-L LM1084IT-5.0/NOPB U9
-U 1 1 58E2AF6D
-P 10250 1150
-F 0 "U9" H 10450 950 50  0000 C CNN
-F 1 "LM1084IT-5.0/NOPB" H 9950 1350 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 10250 1250 50  0001 C CIN
-F 3 "" H 10250 1150 50  0001 C CNN
-	1    10250 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C1
-U 1 1 58E2B0CB
-P 9850 1250
-F 0 "C1" H 9875 1350 50  0000 L CNN
-F 1 "CP1" H 9875 1150 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_Tantal_D4.5mm_P2.50mm" H 9850 1250 50  0001 C CNN
-F 3 "" H 9850 1250 50  0001 C CNN
-	1    9850 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C2
-U 1 1 58E2B26C
-P 10650 1250
-F 0 "C2" H 10675 1350 50  0000 L CNN
-F 1 "CP1" H 10675 1150 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_Tantal_D4.5mm_P2.50mm" H 10650 1250 50  0001 C CNN
-F 3 "" H 10650 1250 50  0001 C CNN
-	1    10650 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L VCC #PWR017
-U 1 1 58E2B395
-P 9650 1100
-F 0 "#PWR017" H 9650 950 50  0001 C CNN
-F 1 "VCC" H 9650 1250 50  0000 C CNN
-F 2 "" H 9650 1100 50  0001 C CNN
-F 3 "" H 9650 1100 50  0001 C CNN
-	1    9650 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR018
+L GND #PWR017
 U 1 1 58E2B4C0
-P 10350 -1950
-F 0 "#PWR018" H 10350 -2200 50  0001 C CNN
-F 1 "GND" H 10350 -2100 50  0000 C CNN
-F 2 "" H 10350 -1950 50  0001 C CNN
-F 3 "" H 10350 -1950 50  0001 C CNN
-	1    10350 -1950
+P 9750 -2000
+F 0 "#PWR017" H 9750 -2250 50  0001 C CNN
+F 1 "GND" H 9750 -2150 50  0000 C CNN
+F 2 "" H 9750 -2000 50  0001 C CNN
+F 3 "" H 9750 -2000 50  0001 C CNN
+	1    9750 -2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 10800 1100 2    30   Input ~ 0
-5V
 $Comp
 L R 220ohm1
 U 1 1 58E31415
@@ -1914,10 +1866,10 @@ pressure3-
 Text GLabel 2250 6900 0    30   Input ~ 0
 pressure4-
 $Comp
-L GND #PWR019
+L GND #PWR018
 U 1 1 58E3994D
 P 1700 7400
-F 0 "#PWR019" H 1700 7150 50  0001 C CNN
+F 0 "#PWR018" H 1700 7150 50  0001 C CNN
 F 1 "GND" H 1700 7250 50  0000 C CNN
 F 2 "" H 1700 7400 50  0001 C CNN
 F 3 "" H 1700 7400 50  0001 C CNN
@@ -1931,37 +1883,37 @@ non_critical_sda
 Text Notes 650  6350 0    139  ~ 0
 Ambient and Pneumatic Pressure Sensors
 $Comp
-L GND #PWR020
+L GND #PWR019
 U 1 1 58E6BA0C
-P 7200 1500
-F 0 "#PWR020" H 7200 1250 50  0001 C CNN
-F 1 "GND" H 7200 1350 50  0000 C CNN
-F 2 "" H 7200 1500 50  0001 C CNN
-F 3 "" H 7200 1500 50  0001 C CNN
-	1    7200 1500
+P 6750 1950
+F 0 "#PWR019" H 6750 1700 50  0001 C CNN
+F 1 "GND" H 6750 1800 50  0000 C CNN
+F 2 "" H 6750 1950 50  0001 C CNN
+F 3 "" H 6750 1950 50  0001 C CNN
+	1    6750 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L 2pinscrew S1
 U 1 1 58E5FB7F
-P 10050 -1900
-F 0 "S1" H 10050 -2000 60  0000 C CNN
-F 1 "2pinscrew" H 10050 -2300 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 10050 -1900 60  0001 C CNN
-F 3 "" H 10050 -1900 60  0001 C CNN
-	1    10050 -1900
+P 9450 -1950
+F 0 "S1" H 9450 -2050 60  0000 C CNN
+F 1 "2pinscrew" H 9450 -2350 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 9450 -1950 60  0001 C CNN
+F 3 "" H 9450 -1950 60  0001 C CNN
+	1    9450 -1950
 	1    0    0    -1  
 $EndComp
-Text Notes 9750 -2050 0    60   ~ 0
+Text Notes 9150 -2100 0    60   ~ 0
 Battery
-Text Notes 9100 700  0    139  ~ 0
-Power Supply
+Text Notes 6500 700  0    139  ~ 0
+Power Supply Aliasing
 Text Notes 22200 -250 0    139  ~ 0
 MAGLOCK
 Text GLabel 9050 3050 2    30   Input ~ 0
 non_critical_sda
-Text GLabel 9850 -1950 0    39   Input ~ 0
-VCC_IN
+Text GLabel 9250 -2000 0    39   Input ~ 0
+batt_in
 Text GLabel 9050 3150 2    30   Input ~ 0
 non_critical_scl
 Text Notes 8350 2700 0    60   ~ 0
@@ -1981,32 +1933,21 @@ MyRio Sensor
 Text Notes 9150 2600 0    139  ~ 0
 Power Sensors
 Text GLabel 8150 3000 0    39   Input ~ 0
-VCC_IN
-$Comp
-L VCC #PWR021
-U 1 1 58E53157
-P 8150 3200
-F 0 "#PWR021" H 8150 3050 50  0001 C CNN
-F 1 "VCC" H 8150 3350 50  0000 C CNN
-F 2 "" H 8150 3200 50  0001 C CNN
-F 3 "" H 8150 3200 50  0001 C CNN
-	1    8150 3200
-	0    -1   -1   0   
-$EndComp
+batt_in
 $Comp
 L 2pinscrew S3
 U 1 1 58E78034
-P 8950 -1950
-F 0 "S3" H 8950 -2050 60  0000 C CNN
-F 1 "2pinscrew" H 8950 -2350 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 8950 -1950 60  0001 C CNN
-F 3 "" H 8950 -1950 60  0001 C CNN
-	1    8950 -1950
+P 8350 -2000
+F 0 "S3" H 8350 -2100 60  0000 C CNN
+F 1 "2pinscrew" H 8350 -2400 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 8350 -2000 60  0001 C CNN
+F 3 "" H 8350 -2000 60  0001 C CNN
+	1    8350 -2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 8750 -2000 2    30   Input ~ 0
+Text GLabel 8150 -2050 2    30   Input ~ 0
 myRIO_12V
-Text Notes 8600 -1400 0    60   ~ 0
+Text Notes 8100 -2150 0    60   ~ 0
 myRIO Power
 NoConn ~ 2600 1150
 NoConn ~ 2600 1250
@@ -2017,128 +1958,84 @@ NoConn ~ 3050 3150
 NoConn ~ 3050 3450
 NoConn ~ 3050 3650
 $Comp
-L GND #PWR022
-U 1 1 58E599AA
-P 10250 1400
-F 0 "#PWR022" H 10250 1150 50  0001 C CNN
-F 1 "GND" H 10250 1250 50  0000 C CNN
-F 2 "" H 10250 1400 50  0001 C CNN
-F 3 "" H 10250 1400 50  0001 C CNN
-	1    10250 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L 2pinscrew S4
 U 1 1 58E85A8B
-P 10050 -1200
-F 0 "S4" H 10050 -1300 60  0000 C CNN
-F 1 "2pinscrew" H 10050 -1600 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 10050 -1200 60  0001 C CNN
-F 3 "" H 10050 -1200 60  0001 C CNN
-	1    10050 -1200
+P 9450 -1150
+F 0 "S4" H 9450 -1250 60  0000 C CNN
+F 1 "2pinscrew" H 9450 -1550 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 9450 -1150 60  0001 C CNN
+F 3 "" H 9450 -1150 60  0001 C CNN
+	1    9450 -1150
 	1    0    0    -1  
 $EndComp
-Text GLabel 9850 -1250 0    30   Input ~ 0
+Text GLabel 9250 -1200 0    30   Input ~ 0
 i2c_scl_2
-Text GLabel 10250 -1250 2    30   Input ~ 0
+Text GLabel 9650 -1200 2    30   Input ~ 0
 i2c_sda_2
 $Comp
 L 2pinscrew S5
 U 1 1 58E8B275
-P 8950 -550
-F 0 "S5" H 8950 -650 60  0000 C CNN
-F 1 "2pinscrew" H 8950 -950 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 8950 -550 60  0001 C CNN
-F 3 "" H 8950 -550 60  0001 C CNN
-	1    8950 -550
+P 8350 -500
+F 0 "S5" H 8350 -600 60  0000 C CNN
+F 1 "2pinscrew" H 8350 -900 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 8350 -500 60  0001 C CNN
+F 3 "" H 8350 -500 60  0001 C CNN
+	1    8350 -500
 	1    0    0    -1  
 $EndComp
-Text GLabel 8750 -600 0    30   Input ~ 0
+Text GLabel 8150 -550 0    30   Input ~ 0
 i2c_scl_3
-Text GLabel 9150 -600 2    30   Input ~ 0
+Text GLabel 8550 -550 2    30   Input ~ 0
 i2c_sda_3
-Text GLabel 7200 1050 2    30   Input ~ 0
+Text GLabel 6750 1500 2    30   Input ~ 0
 DGND
-Text GLabel 7200 1400 0    30   Input ~ 0
+Text GLabel 6750 1850 0    30   Input ~ 0
 magnetic_gnd
-Text GLabel 7200 1450 2    30   Input ~ 0
+Text GLabel 6750 1900 2    30   Input ~ 0
 friction_gnd
 Text GLabel 1900 2550 0    30   Input ~ 0
 sense_pwr_ctrl
 NoConn ~ 3100 1250
 NoConn ~ 3100 1450
-Text GLabel 9850 -600 0    60   Input ~ 0
+Text GLabel 9250 -550 0    60   Input ~ 0
 to_cap
 $Comp
 L 2pinscrew S6
 U 1 1 58EB08DA
-P 10050 -550
-F 0 "S6" H 10050 -650 60  0000 C CNN
-F 1 "2pinscrew" H 10050 -950 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 10050 -550 60  0001 C CNN
-F 3 "" H 10050 -550 60  0001 C CNN
-	1    10050 -550
+P 9450 -500
+F 0 "S6" H 9450 -600 60  0000 C CNN
+F 1 "2pinscrew" H 9450 -900 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 9450 -500 60  0001 C CNN
+F 3 "" H 9450 -500 60  0001 C CNN
+	1    9450 -500
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG023
+L PWR_FLAG #FLG020
 U 1 1 58EB21F4
-P 10700 700
-F 0 "#FLG023" H 10700 775 50  0001 C CNN
-F 1 "PWR_FLAG" H 10700 850 50  0000 C CNN
-F 2 "" H 10700 700 50  0001 C CNN
-F 3 "" H 10700 700 50  0001 C CNN
-	1    10700 700 
+P 7350 1500
+F 0 "#FLG020" H 7350 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 1650 50  0000 C CNN
+F 2 "" H 7350 1500 50  0001 C CNN
+F 3 "" H 7350 1500 50  0001 C CNN
+	1    7350 1500
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG024
-U 1 1 58EB3CC0
-P 11000 800
-F 0 "#FLG024" H 11000 875 50  0001 C CNN
-F 1 "PWR_FLAG" H 11000 950 50  0000 C CNN
-F 2 "" H 11000 800 50  0001 C CNN
-F 3 "" H 11000 800 50  0001 C CNN
-	1    11000 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L VCC #PWR025
+L VCC #PWR021
 U 1 1 58EB3FDB
-P 10700 700
-F 0 "#PWR025" H 10700 550 50  0001 C CNN
-F 1 "VCC" H 10700 850 50  0000 C CNN
-F 2 "" H 10700 700 50  0001 C CNN
-F 3 "" H 10700 700 50  0001 C CNN
-	1    10700 700 
+P 8000 1550
+F 0 "#PWR021" H 8000 1400 50  0001 C CNN
+F 1 "VCC" H 8000 1700 50  0000 C CNN
+F 2 "" H 8000 1550 50  0001 C CNN
+F 3 "" H 8000 1550 50  0001 C CNN
+	1    8000 1550
 	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR026
-U 1 1 58EB4DF0
-P 11000 800
-F 0 "#PWR026" H 11000 550 50  0001 C CNN
-F 1 "GND" H 11000 650 50  0000 C CNN
-F 2 "" H 11000 800 50  0001 C CNN
-F 3 "" H 11000 800 50  0001 C CNN
-	1    11000 800 
-	1    0    0    -1  
 $EndComp
 NoConn ~ 10650 2900
 NoConn ~ 10650 3000
 NoConn ~ 9050 2850
 NoConn ~ 9050 2950
-$Comp
-L R R21
-U 1 1 58E690D9
-P 7200 1200
-F 0 "R21" V 7280 1200 50  0000 C CNN
-F 1 "100K" V 7200 1200 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7130 1200 50  0001 C CNN
-F 3 "" H 7200 1200 50  0001 C CNN
-	1    7200 1200
-	1    0    0    -1  
-$EndComp
 Text GLabel 21950 7000 2    30   Input ~ 0
 DGND
 Text GLabel 14400 600  2    30   Input ~ 0
@@ -2158,10 +2055,10 @@ DGND
 Text GLabel 16050 2550 2    30   Input ~ 0
 DGND
 $Comp
-L GND #PWR027
+L GND #PWR022
 U 1 1 58DF0D89
 P 18250 6650
-F 0 "#PWR027" H 18250 6400 50  0001 C CNN
+F 0 "#PWR022" H 18250 6400 50  0001 C CNN
 F 1 "GND" H 18250 6500 50  0000 C CNN
 F 2 "" H 18250 6650 50  0000 C CNN
 F 3 "" H 18250 6650 50  0000 C CNN
@@ -2169,10 +2066,10 @@ F 3 "" H 18250 6650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR028
+L GND #PWR023
 U 1 1 58D55D6B
 P 15350 4000
-F 0 "#PWR028" H 15350 3750 50  0001 C CNN
+F 0 "#PWR023" H 15350 3750 50  0001 C CNN
 F 1 "GND" H 15350 3850 50  0000 C CNN
 F 2 "" H 15350 4000 50  0000 C CNN
 F 3 "" H 15350 4000 50  0000 C CNN
@@ -2180,10 +2077,10 @@ F 3 "" H 15350 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR029
+L GND #PWR024
 U 1 1 58D4BB74
 P 18900 2950
-F 0 "#PWR029" H 18900 2700 50  0001 C CNN
+F 0 "#PWR024" H 18900 2700 50  0001 C CNN
 F 1 "GND" H 18900 2800 50  0000 C CNN
 F 2 "" H 18900 2950 50  0000 C CNN
 F 3 "" H 18900 2950 50  0000 C CNN
@@ -2191,10 +2088,10 @@ F 3 "" H 18900 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR030
+L GND #PWR025
 U 1 1 58D4B8EC
 P 17800 2950
-F 0 "#PWR030" H 17800 2700 50  0001 C CNN
+F 0 "#PWR025" H 17800 2700 50  0001 C CNN
 F 1 "GND" H 17800 2800 50  0000 C CNN
 F 2 "" H 17800 2950 50  0000 C CNN
 F 3 "" H 17800 2950 50  0000 C CNN
@@ -2202,10 +2099,10 @@ F 3 "" H 17800 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR031
+L GND #PWR026
 U 1 1 58D4BB92
 P 18900 3950
-F 0 "#PWR031" H 18900 3700 50  0001 C CNN
+F 0 "#PWR026" H 18900 3700 50  0001 C CNN
 F 1 "GND" H 18900 3800 50  0000 C CNN
 F 2 "" H 18900 3950 50  0000 C CNN
 F 3 "" H 18900 3950 50  0000 C CNN
@@ -2213,10 +2110,10 @@ F 3 "" H 18900 3950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR032
+L GND #PWR027
 U 1 1 58D4B90A
 P 17800 3950
-F 0 "#PWR032" H 17800 3700 50  0001 C CNN
+F 0 "#PWR027" H 17800 3700 50  0001 C CNN
 F 1 "GND" H 17800 3800 50  0000 C CNN
 F 2 "" H 17800 3950 50  0000 C CNN
 F 3 "" H 17800 3950 50  0000 C CNN
@@ -2224,10 +2121,10 @@ F 3 "" H 17800 3950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR033
+L GND #PWR028
 U 1 1 58D4BB38
 P 18900 950
-F 0 "#PWR033" H 18900 700 50  0001 C CNN
+F 0 "#PWR028" H 18900 700 50  0001 C CNN
 F 1 "GND" H 18900 800 50  0000 C CNN
 F 2 "" H 18900 950 50  0000 C CNN
 F 3 "" H 18900 950 50  0000 C CNN
@@ -2235,10 +2132,10 @@ F 3 "" H 18900 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR034
+L GND #PWR029
 U 1 1 58D4BB56
 P 18900 1950
-F 0 "#PWR034" H 18900 1700 50  0001 C CNN
+F 0 "#PWR029" H 18900 1700 50  0001 C CNN
 F 1 "GND" H 18900 1800 50  0000 C CNN
 F 2 "" H 18900 1950 50  0000 C CNN
 F 3 "" H 18900 1950 50  0000 C CNN
@@ -2246,10 +2143,10 @@ F 3 "" H 18900 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR035
+L GND #PWR030
 U 1 1 58D4B79C
 P 17800 1950
-F 0 "#PWR035" H 17800 1700 50  0001 C CNN
+F 0 "#PWR030" H 17800 1700 50  0001 C CNN
 F 1 "GND" H 17800 1800 50  0000 C CNN
 F 2 "" H 17800 1950 50  0000 C CNN
 F 3 "" H 17800 1950 50  0000 C CNN
@@ -2257,10 +2154,10 @@ F 3 "" H 17800 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR036
+L GND #PWR031
 U 1 1 58D4ABFE
 P 17800 950
-F 0 "#PWR036" H 17800 700 50  0001 C CNN
+F 0 "#PWR031" H 17800 700 50  0001 C CNN
 F 1 "GND" H 17800 800 50  0000 C CNN
 F 2 "" H 17800 950 50  0000 C CNN
 F 3 "" H 17800 950 50  0000 C CNN
@@ -2268,10 +2165,10 @@ F 3 "" H 17800 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR037
+L GND #PWR032
 U 1 1 58E75E1D
 P 22050 1600
-F 0 "#PWR037" H 22050 1350 50  0001 C CNN
+F 0 "#PWR032" H 22050 1350 50  0001 C CNN
 F 1 "GND" H 22050 1450 50  0000 C CNN
 F 2 "" H 22050 1600 50  0000 C CNN
 F 3 "" H 22050 1600 50  0000 C CNN
@@ -2279,10 +2176,10 @@ F 3 "" H 22050 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR038
+L GND #PWR033
 U 1 1 58E76890
 P 22050 2300
-F 0 "#PWR038" H 22050 2050 50  0001 C CNN
+F 0 "#PWR033" H 22050 2050 50  0001 C CNN
 F 1 "GND" H 22050 2150 50  0000 C CNN
 F 2 "" H 22050 2300 50  0000 C CNN
 F 3 "" H 22050 2300 50  0000 C CNN
@@ -2292,10 +2189,10 @@ $EndComp
 Text GLabel 3100 7100 2    30   Input ~ 0
 DGND
 $Comp
-L GND #PWR039
+L GND #PWR034
 U 1 1 58E88972
 P 3700 1000
-F 0 "#PWR039" H 3700 750 50  0001 C CNN
+F 0 "#PWR034" H 3700 750 50  0001 C CNN
 F 1 "GND" H 3700 850 50  0000 C CNN
 F 2 "" H 3700 1000 50  0001 C CNN
 F 3 "" H 3700 1000 50  0001 C CNN
@@ -2321,14 +2218,14 @@ DGND
 Text GLabel 10650 3300 2    30   Input ~ 0
 DGND
 $Comp
-L PWR_FLAG #FLG040
+L PWR_FLAG #FLG035
 U 1 1 58EA854F
-P 7200 1050
-F 0 "#FLG040" H 7200 1125 50  0001 C CNN
-F 1 "PWR_FLAG" H 7200 1200 50  0000 C CNN
-F 2 "" H 7200 1050 50  0001 C CNN
-F 3 "" H 7200 1050 50  0001 C CNN
-	1    7200 1050
+P 6750 1500
+F 0 "#FLG035" H 6750 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 1650 50  0000 C CNN
+F 2 "" H 6750 1500 50  0001 C CNN
+F 3 "" H 6750 1500 50  0001 C CNN
+	1    6750 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2370,7 +2267,7 @@ U 1 1 58EC8203
 P 1900 10800
 F 0 "U3" H 1700 11750 60  0000 C CNN
 F 1 "stacked-rj45-LED" H 1700 10950 60  0000 C CNN
-F 2 "footprints:stacked-rj45_Final" H 1900 10800 60  0001 C CNN
+F 2 "footprints:stacked-rj45_Final++" H 1900 10800 60  0001 C CNN
 F 3 "" H 1900 10800 60  0001 C CNN
 	1    1900 10800
 	1    0    0    -1  
@@ -2381,7 +2278,7 @@ U 1 1 58EC9155
 P 4100 10800
 F 0 "U5" H 3900 11750 60  0000 C CNN
 F 1 "stacked-rj45-LED" H 3900 10950 60  0000 C CNN
-F 2 "footprints:stacked-rj45_Final" H 4100 10800 60  0001 C CNN
+F 2 "footprints:stacked-rj45_Final++" H 4100 10800 60  0001 C CNN
 F 3 "" H 4100 10800 60  0001 C CNN
 	1    4100 10800
 	1    0    0    -1  
@@ -2392,7 +2289,7 @@ U 1 1 58EC98D9
 P 6350 10800
 F 0 "U7" H 6150 11750 60  0000 C CNN
 F 1 "stacked-rj45-LED" H 6150 10950 60  0000 C CNN
-F 2 "footprints:stacked-rj45_Final" H 6350 10800 60  0001 C CNN
+F 2 "footprints:stacked-rj45_Final++" H 6350 10800 60  0001 C CNN
 F 3 "" H 6350 10800 60  0001 C CNN
 	1    6350 10800
 	1    0    0    -1  
@@ -2427,7 +2324,7 @@ U 1 1 58ED516B
 P 1900 12300
 F 0 "U4" H 1700 13250 60  0000 C CNN
 F 1 "stacked-rj45-LED" H 1700 12450 60  0000 C CNN
-F 2 "footprints:stacked-rj45_Final" H 1900 12300 60  0001 C CNN
+F 2 "footprints:stacked-rj45_Final++" H 1900 12300 60  0001 C CNN
 F 3 "" H 1900 12300 60  0001 C CNN
 	1    1900 12300
 	1    0    0    -1  
@@ -2443,63 +2340,6 @@ NoConn ~ 1950 12100
 Text GLabel 14600 3850 2    30   Input ~ 0
 24V
 NoConn ~ 5600 10250
-$Comp
-L LM1084IT-5.0/NOPB U16
-U 1 1 58EA769D
-P 8600 1150
-F 0 "U16" H 8800 950 50  0000 C CNN
-F 1 "12V regulator" H 8300 1350 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 8600 1250 50  0001 C CIN
-F 3 "" H 8600 1150 50  0001 C CNN
-	1    8600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C3
-U 1 1 58EA76A3
-P 8200 1250
-F 0 "C3" H 8225 1350 50  0000 L CNN
-F 1 "CP1" H 8225 1150 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_Tantal_D4.5mm_P2.50mm" H 8200 1250 50  0001 C CNN
-F 3 "" H 8200 1250 50  0001 C CNN
-	1    8200 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C4
-U 1 1 58EA76A9
-P 9000 1250
-F 0 "C4" H 9025 1350 50  0000 L CNN
-F 1 "CP1" H 9025 1150 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_Tantal_D4.5mm_P2.50mm" H 9000 1250 50  0001 C CNN
-F 3 "" H 9000 1250 50  0001 C CNN
-	1    9000 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L VCC #PWR041
-U 1 1 58EA76AF
-P 8000 1100
-F 0 "#PWR041" H 8000 950 50  0001 C CNN
-F 1 "VCC" H 8000 1250 50  0000 C CNN
-F 2 "" H 8000 1100 50  0001 C CNN
-F 3 "" H 8000 1100 50  0001 C CNN
-	1    8000 1100
-	1    0    0    -1  
-$EndComp
-Text GLabel 9150 1100 2    30   Input ~ 0
-12V
-$Comp
-L GND #PWR042
-U 1 1 58EA76B6
-P 8600 1400
-F 0 "#PWR042" H 8600 1150 50  0001 C CNN
-F 1 "GND" H 8600 1250 50  0000 C CNN
-F 2 "" H 8600 1400 50  0001 C CNN
-F 3 "" H 8600 1400 50  0001 C CNN
-	1    8600 1400
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7450 2850
 NoConn ~ 7450 2950
 Text GLabel 6550 3200 0    30   Input ~ 0
@@ -2546,78 +2386,6 @@ F 3 "" H 10650 5950 50  0000 C CNN
 $EndComp
 Text GLabel 10750 5700 2    30   Input ~ 0
 laser_digital
-$Comp
-L GND #PWR043
-U 1 1 58EADD04
-P 11400 -1950
-F 0 "#PWR043" H 11400 -2200 50  0001 C CNN
-F 1 "GND" H 11400 -2100 50  0000 C CNN
-F 2 "" H 11400 -1950 50  0001 C CNN
-F 3 "" H 11400 -1950 50  0001 C CNN
-	1    11400 -1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L 2pinscrew S8
-U 1 1 58EADD0A
-P 11100 -1900
-F 0 "S8" H 11100 -2000 60  0000 C CNN
-F 1 "2pinscrew" H 11100 -2300 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 11100 -1900 60  0001 C CNN
-F 3 "" H 11100 -1900 60  0001 C CNN
-	1    11100 -1900
-	1    0    0    -1  
-$EndComp
-Text Notes 10600 -2000 0    60   ~ 0
-Debugging Screw Terminals
-$Comp
-L 2pinscrew S9
-U 1 1 58EADD12
-P 11100 -1200
-F 0 "S9" H 11100 -1300 60  0000 C CNN
-F 1 "2pinscrew" H 11100 -1600 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 11100 -1200 60  0001 C CNN
-F 3 "" H 11100 -1200 60  0001 C CNN
-	1    11100 -1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L 2pinscrew S10
-U 1 1 58EADD1B
-P 11100 -550
-F 0 "S10" H 11100 -650 60  0000 C CNN
-F 1 "2pinscrew" H 11100 -950 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 11100 -550 60  0001 C CNN
-F 3 "" H 11100 -550 60  0001 C CNN
-	1    11100 -550
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR044
-U 1 1 58EAE246
-P 11400 -1250
-F 0 "#PWR044" H 11400 -1500 50  0001 C CNN
-F 1 "GND" H 11400 -1400 50  0000 C CNN
-F 2 "" H 11400 -1250 50  0001 C CNN
-F 3 "" H 11400 -1250 50  0001 C CNN
-	1    11400 -1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR045
-U 1 1 58EAE3B3
-P 11400 -600
-F 0 "#PWR045" H 11400 -850 50  0001 C CNN
-F 1 "GND" H 11400 -750 50  0000 C CNN
-F 2 "" H 11400 -600 50  0001 C CNN
-F 3 "" H 11400 -600 50  0001 C CNN
-	1    11400 -600
-	1    0    0    -1  
-$EndComp
-Text GLabel 10900 -1250 0    30   Input ~ 0
-12V
-Text GLabel 10900 -600 0    30   Input ~ 0
-5V
 Text Notes 10100 5250 0    60   ~ 0
 Main Laser Circuit
 $Comp
@@ -3103,13 +2871,6 @@ Wire Notes Line
 Wire Notes Line
 	700  12300 700  9250
 Wire Wire Line
-	10650 1100 10800 1100
-Wire Wire Line
-	9850 1400 10650 1400
-Connection ~ 10250 1400
-Wire Wire Line
-	9650 1100 9850 1100
-Wire Wire Line
 	1050 6900 1050 7000
 Wire Wire Line
 	1450 6900 1450 7000
@@ -3129,7 +2890,7 @@ Wire Notes Line
 Wire Notes Line
 	5100 6150 5100 7750
 Wire Wire Line
-	10250 -1950 10350 -1950
+	9650 -2000 9750 -2000
 Wire Notes Line
 	6300 2350 11200 2350
 Wire Notes Line
@@ -3139,7 +2900,7 @@ Wire Notes Line
 Wire Wire Line
 	9750 2950 9750 3050
 Wire Wire Line
-	7200 1350 7200 1500
+	6750 1500 6750 1950
 Wire Wire Line
 	3100 1050 3700 1050
 Wire Wire Line
@@ -3151,25 +2912,12 @@ Wire Notes Line
 Wire Notes Line
 	5050 12300 5050 9250
 Wire Wire Line
-	9000 1100 9150 1100
-Wire Wire Line
-	8200 1400 9000 1400
-Connection ~ 8600 1400
-Wire Wire Line
-	8000 1100 8200 1100
-Wire Wire Line
 	10650 5650 10650 5750
 Wire Wire Line
 	10650 5700 10750 5700
 Connection ~ 10650 5700
 Wire Wire Line
 	10550 5350 10650 5350
-Wire Wire Line
-	11300 -1950 11400 -1950
-Wire Wire Line
-	11300 -1250 11400 -1250
-Wire Wire Line
-	11300 -600 11400 -600
 Wire Wire Line
 	6650 5700 8500 5700
 Connection ~ 6750 5700
@@ -3190,18 +2938,18 @@ Wire Notes Line
 Wire Notes Line
 	11100 6500 6400 6500
 $Comp
-L GND #PWR046
+L GND #PWR036
 U 1 1 58EA8C4A
-P 10350 -600
-F 0 "#PWR046" H 10350 -850 50  0001 C CNN
-F 1 "GND" H 10350 -750 50  0000 C CNN
-F 2 "" H 10350 -600 50  0001 C CNN
-F 3 "" H 10350 -600 50  0001 C CNN
-	1    10350 -600
+P 9750 -550
+F 0 "#PWR036" H 9750 -800 50  0001 C CNN
+F 1 "GND" H 9750 -700 50  0000 C CNN
+F 2 "" H 9750 -550 50  0001 C CNN
+F 3 "" H 9750 -550 50  0001 C CNN
+	1    9750 -550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10250 -600 10350 -600
+	9650 -550 9750 -550
 $Comp
 L D D22
 U 1 1 58EA9E88
@@ -3227,7 +2975,7 @@ U 1 1 58EB2265
 P 6350 12300
 F 0 "U14" H 6150 13250 60  0000 C CNN
 F 1 "stacked-rj45-LED" H 6150 12450 60  0000 C CNN
-F 2 "footprints:stacked-rj45_Final" H 6350 12300 60  0001 C CNN
+F 2 "footprints:stacked-rj45_Final++" H 6350 12300 60  0001 C CNN
 F 3 "" H 6350 12300 60  0001 C CNN
 	1    6350 12300
 	1    0    0    -1  
@@ -3275,7 +3023,7 @@ U 1 1 58EB79D9
 P 8550 10800
 F 0 "U15" H 8350 11750 60  0000 C CNN
 F 1 "stacked-rj45-LED" H 8350 10950 60  0000 C CNN
-F 2 "footprints:stacked-rj45_Final" H 8550 10800 60  0001 C CNN
+F 2 "footprints:stacked-rj45_Final++" H 8550 10800 60  0001 C CNN
 F 3 "" H 8550 10800 60  0001 C CNN
 	1    8550 10800
 	1    0    0    -1  
@@ -3296,8 +3044,6 @@ Text GLabel 7800 10250 0    30   Input ~ 0
 24V
 Text GLabel 7800 10350 0    30   Input ~ 0
 24V
-Text Notes 7500 11000 0    60   ~ 0
-two pressure sensors will go into a screw terminal too ethernet board
 Text GLabel 8900 9650 2    30   Input ~ 0
 pressure3-
 Text GLabel 8900 9750 2    30   Input ~ 0
@@ -3415,12 +3161,6 @@ NoConn ~ 8600 10600
 Wire Notes Line
 	9450 9250 9450 12300
 Wire Notes Line
-	700  12600 6000 12600
-Wire Notes Line
-	6000 12600 6000 14000
-Wire Notes Line
-	6000 14000 700  14000
-Wire Notes Line
 	700  14000 700  12600
 Text Notes 950  12600 0    60   ~ 0
 DSUB connectors
@@ -3435,17 +3175,17 @@ A1
 $Comp
 L 2pinscrew S2
 U 1 1 58EAD362
-P 8950 -1100
-F 0 "S2" H 8950 -1200 60  0000 C CNN
-F 1 "2pinscrew" H 8950 -1500 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 8950 -1100 60  0001 C CNN
-F 3 "" H 8950 -1100 60  0001 C CNN
-	1    8950 -1100
+P 8350 -1050
+F 0 "S2" H 8350 -1150 60  0000 C CNN
+F 1 "2pinscrew" H 8350 -1450 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 8350 -1050 60  0001 C CNN
+F 3 "" H 8350 -1050 60  0001 C CNN
+	1    8350 -1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 8750 -1150 0    30   Input ~ 0
+Text GLabel 8150 -1100 0    30   Input ~ 0
 A0
-Text GLabel 9150 -1150 0    30   Input ~ 0
+Text GLabel 8550 -1100 0    30   Input ~ 0
 A1
 Wire Wire Line
 	22550 2150 22550 1450
@@ -3455,10 +3195,10 @@ Connection ~ 22550 1800
 Text GLabel 23050 1800 1    60   Input ~ 0
 brake_pwr
 $Comp
-L VCC #PWR047
+L VCC #PWR037
 U 1 1 58EC6118
 P 9750 2950
-F 0 "#PWR047" H 9750 2800 50  0001 C CNN
+F 0 "#PWR037" H 9750 2800 50  0001 C CNN
 F 1 "VCC" H 9750 3100 50  0000 C CNN
 F 2 "" H 9750 2950 50  0000 C CNN
 F 3 "" H 9750 2950 50  0000 C CNN
@@ -3478,7 +3218,7 @@ F 3 "" H 2850 7150 139 0001 C CNN
 	1    2800 7150
 	1    0    0    -1  
 $EndComp
-Text GLabel 9150 -2000 2    30   Input ~ 0
+Text GLabel 8550 -2050 2    30   Input ~ 0
 DGND
 Text GLabel 7450 3350 2    30   Input ~ 0
 sense_pwr
@@ -3488,52 +3228,37 @@ Text GLabel 10650 3400 2    30   Input ~ 0
 sense_pwr
 Text GLabel 9050 3350 2    30   Input ~ 0
 sense_pwr
-Text GLabel 10700 700  2    30   Input ~ 0
+Text GLabel 4700 13200 0    30   Input ~ 0
 24V
 $Comp
-L DB9 J1
-U 1 1 58F4A3D1
-P 5550 13300
-F 0 "J1" H 5550 13850 50  0000 C CNN
-F 1 "DB9" H 5550 12750 50  0000 C CNN
-F 2 "Connectors:DB9FD" H 5550 13300 50  0001 C CNN
-F 3 "" H 5550 13300 50  0000 C CNN
-	1    5550 13300
-	1    0    0    -1  
-$EndComp
-Text GLabel 5100 13000 0    30   Input ~ 0
-24V
-$Comp
-L GND #PWR048
+L GND #PWR038
 U 1 1 58F647A0
-P 5100 12900
-F 0 "#PWR048" H 5100 12650 50  0001 C CNN
-F 1 "GND" H 5100 12750 50  0000 C CNN
-F 2 "" H 5100 12900 50  0000 C CNN
-F 3 "" H 5100 12900 50  0000 C CNN
-	1    5100 12900
+P 4550 13600
+F 0 "#PWR038" H 4550 13350 50  0001 C CNN
+F 1 "GND" H 4550 13450 50  0000 C CNN
+F 2 "" H 4550 13600 50  0000 C CNN
+F 3 "" H 4550 13600 50  0000 C CNN
+	1    4550 13600
 	-1   0    0    1   
 $EndComp
-Text GLabel 10800 1750 2    30   Input ~ 0
+Text GLabel 8300 1500 2    30   Input ~ 0
 sense_pwr
 $Comp
-L PWR_FLAG #FLG049
+L PWR_FLAG #FLG039
 U 1 1 58F6EC3C
-P 10800 1750
-F 0 "#FLG049" H 10800 1825 50  0001 C CNN
-F 1 "PWR_FLAG" H 10800 1900 50  0000 C CNN
-F 2 "" H 10800 1750 50  0001 C CNN
-F 3 "" H 10800 1750 50  0001 C CNN
-	1    10800 1750
+P 8300 1500
+F 0 "#FLG039" H 8300 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 8300 1650 50  0000 C CNN
+F 2 "" H 8300 1500 50  0001 C CNN
+F 3 "" H 8300 1500 50  0001 C CNN
+	1    8300 1500
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5100 13100
-NoConn ~ 5100 13200
-NoConn ~ 5100 13300
-NoConn ~ 5100 13400
-NoConn ~ 5100 13500
-NoConn ~ 5100 13600
-NoConn ~ 5100 13700
+NoConn ~ 4700 13000
+NoConn ~ 4700 13100
+NoConn ~ 4700 13300
+NoConn ~ 4700 13400
+NoConn ~ 4700 13500
 $Comp
 L BNO055 U6
 U 1 1 58F7845E
@@ -3559,65 +3284,6 @@ NoConn ~ 9850 5600
 NoConn ~ 9850 5700
 NoConn ~ 9850 5900
 NoConn ~ 9850 6000
-$Comp
-L relay RE21
-U 1 1 58F4B848
-P 14900 -3900
-F 0 "RE21" H 15150 -4150 60  0000 C CNN
-F 1 "relay" H 15200 -3600 60  0000 C CNN
-F 2 "footprints:relay" H 14900 -3900 60  0001 C CNN
-F 3 "" H 14900 -3900 60  0001 C CNN
-	1    14900 -3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L PN2222A Q21
-U 1 1 58F4D192
-P 16000 -3450
-F 0 "Q21" H 16200 -3375 50  0000 L CNN
-F 1 "PN2222A" H 16200 -3450 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 16200 -3525 50  0001 L CIN
-F 3 "" H 16000 -3450 50  0000 L CNN
-	1    16000 -3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R31
-U 1 1 58F4E403
-P 15800 -3300
-F 0 "R31" V 15880 -3300 50  0000 C CNN
-F 1 "R" V 15800 -3300 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 15730 -3300 50  0001 C CNN
-F 3 "" H 15800 -3300 50  0000 C CNN
-	1    15800 -3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L D D23
-U 1 1 58F4FC63
-P 16300 -3750
-F 0 "D23" H 16300 -3650 50  0000 C CNN
-F 1 "D" H 16300 -3850 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 16300 -3750 50  0001 C CNN
-F 3 "" H 16300 -3750 50  0000 C CNN
-	1    16300 -3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR050
-U 1 1 58F53B2E
-P 16100 -3250
-F 0 "#PWR050" H 16100 -3500 50  0001 C CNN
-F 1 "GND" H 16100 -3400 50  0000 C CNN
-F 2 "" H 16100 -3250 50  0000 C CNN
-F 3 "" H 16100 -3250 50  0000 C CNN
-	1    16100 -3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	16150 -3750 16100 -3750
-Wire Wire Line
-	16100 -3750 16100 -3650
 Text GLabel 1850 4600 0    60   Input ~ 0
 motor_ctrl
 Wire Wire Line
@@ -3626,56 +3292,221 @@ Wire Wire Line
 	2200 4250 2200 4600
 Wire Wire Line
 	2200 4600 1850 4600
-Text GLabel 15800 -3150 0    60   Input ~ 0
-motor_ctrl
-Text GLabel 16450 -3750 2    30   Input ~ 0
-5V
-Text GLabel 16100 -3750 0    60   Input ~ 0
-motor_ctrl_coil-
-Text GLabel 14100 -3900 0    60   Input ~ 0
-motor_ctrl_coil-
-Text GLabel 15050 -4050 2    30   Input ~ 0
-5V
 $Comp
-L GND #PWR051
-U 1 1 58F69301
-P 15050 -3750
-F 0 "#PWR051" H 15050 -4000 50  0001 C CNN
-F 1 "GND" H 15050 -3900 50  0000 C CNN
-F 2 "" H 15050 -3750 50  0000 C CNN
-F 3 "" H 15050 -3750 50  0000 C CNN
-	1    15050 -3750
-	0    -1   -1   0   
-$EndComp
-Text GLabel 15050 -3900 2    30   Input ~ 0
-24V
-NoConn ~ 14100 -4050
-Text GLabel 14100 -3750 0    60   Input ~ 0
-motor_pwr
-$Comp
-L 2pinscrew S7
-U 1 1 58F7B2B4
-P 12300 -1900
-F 0 "S7" H 12300 -2000 60  0000 C CNN
-F 1 "2pinscrew" H 12300 -2300 60  0000 C CNN
-F 2 "footprints:screwinconnector" H 12300 -1900 60  0001 C CNN
-F 3 "" H 12300 -1900 60  0001 C CNN
-	1    12300 -1900
+L stacked-DB9 U8
+U 1 1 5934A4EE
+P 5250 13600
+F 0 "U8" H 5050 14400 60  0000 C CNN
+F 1 "stacked-DB9" H 5200 13550 60  0000 C CNN
+F 2 "footprints:DB9-doublestacked_PR" H 5250 13600 60  0001 C CNN
+F 3 "" H 5250 13600 60  0001 C CNN
+	1    5250 13600
 	1    0    0    -1  
 $EndComp
-Text GLabel 12100 -1950 1    60   Input ~ 0
-motor_pwr
+Wire Wire Line
+	4550 13600 4700 13600
+NoConn ~ 4700 12800
+NoConn ~ 4700 12900
+Text GLabel 5700 12800 2    60   Input ~ 0
+motor_ctrl
+Text GLabel 5700 12900 2    30   Input ~ 0
+24V
 $Comp
-L GND #PWR052
-U 1 1 58F7B9C0
-P 12500 -1950
-F 0 "#PWR052" H 12500 -2200 50  0001 C CNN
-F 1 "GND" H 12500 -2100 50  0000 C CNN
-F 2 "" H 12500 -1950 50  0001 C CNN
-F 3 "" H 12500 -1950 50  0001 C CNN
-	1    12500 -1950
+L GND #PWR040
+U 1 1 5934D4B1
+P 6350 12950
+F 0 "#PWR040" H 6350 12700 50  0001 C CNN
+F 1 "GND" H 6350 12800 50  0000 C CNN
+F 2 "" H 6350 12950 50  0000 C CNN
+F 3 "" H 6350 12950 50  0000 C CNN
+	1    6350 12950
 	-1   0    0    1   
 $EndComp
-Text GLabel 10900 -1950 0    39   Input ~ 0
-VCC_IN
+Wire Wire Line
+	6350 12950 5700 12950
+Wire Wire Line
+	5700 12950 5700 13000
+NoConn ~ 5700 13100
+NoConn ~ 5700 13200
+NoConn ~ 5700 13300
+NoConn ~ 5700 13400
+NoConn ~ 5700 13500
+NoConn ~ 5700 13600
+$Comp
+L 2pinscrew S8
+U 1 1 59350FFF
+P 4900 -500
+F 0 "S8" H 4900 -600 60  0000 C CNN
+F 1 "2pinscrew" H 4900 -900 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 4900 -500 60  0001 C CNN
+F 3 "" H 4900 -500 60  0001 C CNN
+	1    4900 -500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2pinscrew S9
+U 1 1 593511C0
+P 5650 -500
+F 0 "S9" H 5650 -600 60  0000 C CNN
+F 1 "2pinscrew" H 5650 -900 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 5650 -500 60  0001 C CNN
+F 3 "" H 5650 -500 60  0001 C CNN
+	1    5650 -500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2pinscrew S10
+U 1 1 5935137A
+P 6600 -500
+F 0 "S10" H 6600 -600 60  0000 C CNN
+F 1 "2pinscrew" H 6600 -900 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 6600 -500 60  0001 C CNN
+F 3 "" H 6600 -500 60  0001 C CNN
+	1    6600 -500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2pinscrew S11
+U 1 1 59351545
+P 7350 -500
+F 0 "S11" H 7350 -600 60  0000 C CNN
+F 1 "2pinscrew" H 7350 -900 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 7350 -500 60  0001 C CNN
+F 3 "" H 7350 -500 60  0001 C CNN
+	1    7350 -500
+	1    0    0    -1  
+$EndComp
+Text Notes 5350 -700 0    60   ~ 0
+Voltage Converter Inputs
+$Comp
+L GND #PWR041
+U 1 1 593522BF
+P 5200 -550
+F 0 "#PWR041" H 5200 -800 50  0001 C CNN
+F 1 "GND" H 5200 -700 50  0000 C CNN
+F 2 "" H 5200 -550 50  0001 C CNN
+F 3 "" H 5200 -550 50  0001 C CNN
+	1    5200 -550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 -550 5200 -550
+$Comp
+L GND #PWR042
+U 1 1 59352A71
+P 6900 -550
+F 0 "#PWR042" H 6900 -800 50  0001 C CNN
+F 1 "GND" H 6900 -700 50  0000 C CNN
+F 2 "" H 6900 -550 50  0001 C CNN
+F 3 "" H 6900 -550 50  0001 C CNN
+	1    6900 -550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 -550 6900 -550
+$Comp
+L GND #PWR043
+U 1 1 59352F10
+P 5950 -550
+F 0 "#PWR043" H 5950 -800 50  0001 C CNN
+F 1 "GND" H 5950 -700 50  0000 C CNN
+F 2 "" H 5950 -550 50  0001 C CNN
+F 3 "" H 5950 -550 50  0001 C CNN
+	1    5950 -550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 -550 5950 -550
+$Comp
+L GND #PWR044
+U 1 1 59353227
+P 7650 -550
+F 0 "#PWR044" H 7650 -800 50  0001 C CNN
+F 1 "GND" H 7650 -700 50  0000 C CNN
+F 2 "" H 7650 -550 50  0001 C CNN
+F 3 "" H 7650 -550 50  0001 C CNN
+	1    7650 -550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 -550 7650 -550
+Text GLabel 7150 -550 0    30   Input ~ 0
+5V
+Text GLabel 5450 -550 2    30   Input ~ 0
+24V
+Text GLabel 8150 3200 0    30   Input ~ 0
+12V
+Text GLabel 8000 1400 1    30   Input ~ 0
+24V
+$Comp
+L 2pinscrew S7
+U 1 1 5935F3F1
+P 4900 -1300
+F 0 "S7" H 4900 -1400 60  0000 C CNN
+F 1 "2pinscrew" H 4900 -1700 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 4900 -1300 60  0001 C CNN
+F 3 "" H 4900 -1300 60  0001 C CNN
+	1    4900 -1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 -1350 0    60   Input ~ 0
+24V
+Text GLabel 5100 -1350 0    60   Input ~ 0
+24V
+Text Notes 4300 -1500 0    60   ~ 0
+Ripcord 24V pins
+Text GLabel 7350 1550 0    30   Input ~ 0
+12V
+Wire Wire Line
+	7350 1500 7350 1550
+Wire Wire Line
+	8000 1400 8000 1550
+$Comp
+L PWR_FLAG #FLG045
+U 1 1 5934D9E0
+P 7800 1500
+F 0 "#FLG045" H 7800 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 7800 1650 50  0000 C CNN
+F 2 "" H 7800 1500 50  0001 C CNN
+F 3 "" H 7800 1500 50  0001 C CNN
+	1    7800 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1500 8000 1500
+Connection ~ 8000 1500
+Wire Notes Line
+	4300 -1650 4300 0   
+Wire Notes Line
+	4300 -800 7750 -800
+Wire Notes Line
+	7750 -2250 7750 0   
+Wire Notes Line
+	4300 0    10000 0   
+Wire Notes Line
+	4300 -1650 5200 -1650
+Wire Notes Line
+	5200 -1650 5200 -800
+Text Notes 8450 -1300 0    60   ~ 0
+Debugging
+Wire Notes Line
+	7750 -1400 10000 -1400
+Wire Notes Line
+	10000 0    10000 -2250
+Wire Notes Line
+	10000 -2250 7750 -2250
+Wire Notes Line
+	8800 -2250 8800 -1400
+Text Notes 4000 -1850 0    300  ~ 60
+Screw Terminals
+Text GLabel 4700 -550 0    30   Input ~ 0
+12V
+Text GLabel 6400 -550 0    30   Input ~ 0
+12V
+Wire Notes Line
+	700  14000 6500 14000
+Wire Notes Line
+	6500 14000 6500 12600
+Wire Notes Line
+	6500 12600 700  12600
 $EndSCHEMATC
