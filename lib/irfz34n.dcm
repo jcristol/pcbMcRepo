@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP IRFZ34N
-D LM1084IT-3.3, 5A 27V Linear Regulator, Fixed Output 3.3V, TO-220
-K Voltage Regulator 5A Positive
-F http://www.ti.com/lit/ds/symlink/lm1084.pdf
-$ENDCMP
-#
-#End Doc Library
