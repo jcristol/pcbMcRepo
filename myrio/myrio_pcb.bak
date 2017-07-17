@@ -829,9 +829,9 @@ F 3 "" H 14500 6200 60  0001 C CNN
 $EndComp
 Text GLabel 14650 6050 2    30   Input ~ 0
 5V
-Text GLabel 14650 6200 2    30   Input ~ 0
-2way_close_1
 Text GLabel 14650 6350 2    30   Input ~ 0
+2way_close_1
+Text GLabel 14650 6200 2    30   Input ~ 0
 2way_open_1
 Text GLabel 13700 6200 0    30   Input ~ 0
 2way_ctrl_1_coil-
@@ -848,9 +848,9 @@ F 3 "" H 14500 6850 60  0001 C CNN
 $EndComp
 Text GLabel 14650 6700 2    30   Input ~ 0
 5V
-Text GLabel 14650 6850 2    30   Input ~ 0
-2way_close_2
 Text GLabel 14650 7000 2    30   Input ~ 0
+2way_close_2
+Text GLabel 14650 6850 2    30   Input ~ 0
 2way_open_2
 Text GLabel 13700 6850 0    30   Input ~ 0
 2way_ctrl_2_coil-
@@ -1469,9 +1469,9 @@ F 3 "" H 14500 7500 60  0001 C CNN
 $EndComp
 Text GLabel 14650 7350 2    30   Input ~ 0
 5V
-Text GLabel 14650 7500 2    30   Input ~ 0
-2way_close_3
 Text GLabel 14650 7650 2    30   Input ~ 0
+2way_close_3
+Text GLabel 14650 7500 2    30   Input ~ 0
 2way_open_3
 Text GLabel 13700 7500 0    30   Input ~ 0
 2way_ctrl_3_coil-
@@ -2847,7 +2847,13 @@ Wire Wire Line
 Wire Wire Line
 	2250 6900 2250 7000
 Wire Wire Line
-	1050 7300 2250 7300
+	1050 7300 1450 7300
+Wire Wire Line
+	1450 7300 1700 7300
+Wire Wire Line
+	1700 7300 1850 7300
+Wire Wire Line
+	1850 7300 2250 7300
 Connection ~ 1450 7300
 Connection ~ 1850 7300
 Wire Wire Line
@@ -2880,14 +2886,30 @@ Wire Notes Line
 Wire Notes Line
 	5050 12300 5050 9250
 Wire Wire Line
-	10650 5650 10650 5750
+	10650 5650 10650 5700
+Wire Wire Line
+	10650 5700 10650 5750
 Wire Wire Line
 	10650 5700 10750 5700
 Connection ~ 10650 5700
 Wire Wire Line
 	10550 5350 10650 5350
 Wire Wire Line
-	6650 5700 8500 5700
+	6650 5700 6750 5700
+Wire Wire Line
+	6750 5700 7000 5700
+Wire Wire Line
+	7000 5700 7250 5700
+Wire Wire Line
+	7250 5700 7500 5700
+Wire Wire Line
+	7500 5700 7750 5700
+Wire Wire Line
+	7750 5700 8000 5700
+Wire Wire Line
+	8000 5700 8250 5700
+Wire Wire Line
+	8250 5700 8500 5700
 Connection ~ 6750 5700
 Connection ~ 7000 5700
 Connection ~ 7250 5700
@@ -3156,7 +3178,9 @@ A0
 Text GLabel 8550 -1100 0    30   Input ~ 0
 A1
 Wire Wire Line
-	22550 2150 22550 1450
+	22550 2150 22550 1800
+Wire Wire Line
+	22550 1800 22550 1450
 Wire Wire Line
 	22550 1800 23050 1800
 Connection ~ 22550 1800
@@ -3422,7 +3446,9 @@ Text GLabel 7350 1550 0    30   Input ~ 0
 Wire Wire Line
 	7350 1500 7350 1550
 Wire Wire Line
-	8000 1400 8000 1550
+	8000 1400 8000 1500
+Wire Wire Line
+	8000 1500 8000 1550
 $Comp
 L PWR_FLAG #FLG045
 U 1 1 5934D9E0
