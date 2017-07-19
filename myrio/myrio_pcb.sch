@@ -3596,7 +3596,37 @@ true_batt_in
 Text Notes 4650 -1400 0    60   ~ 0
 battery fuse
 Wire Notes Line
-	4300 -1500 5350 -1500
+	4300 -1500 6350 -1500
 Wire Notes Line
 	5350 -1500 5350 -800
+$Comp
+L 2pinscrew S?
+U 1 1 5970A4EC
+P 5750 -1300
+F 0 "S?" H 5750 -1400 60  0000 C CNN
+F 1 "2pinscrew" H 5750 -1700 60  0000 C CNN
+F 2 "footprints:screwinconnector++" H 5750 -1300 60  0001 C CNN
+F 3 "" H 5750 -1300 60  0001 C CNN
+	1    5750 -1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5970A700
+P 6100 -1350
+F 0 "#PWR?" H 6100 -1600 50  0001 C CNN
+F 1 "GND" H 6100 -1500 50  0000 C CNN
+F 2 "" H 6100 -1350 50  0001 C CNN
+F 3 "" H 6100 -1350 50  0001 C CNN
+	1    6100 -1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 -1350 6100 -1350
+Text GLabel 5550 -1350 0    39   Input ~ 0
+12V
+Text Notes 5600 -1400 0    60   ~ 0
+router terminal
+Wire Notes Line
+	6350 -1500 6350 -800
 $EndSCHEMATC
