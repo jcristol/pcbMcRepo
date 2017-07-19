@@ -829,9 +829,9 @@ F 3 "" H 14500 6200 60  0001 C CNN
 $EndComp
 Text GLabel 14650 6050 2    30   Input ~ 0
 5V
-Text GLabel 14650 6200 2    30   Input ~ 0
-2way_close_1
 Text GLabel 14650 6350 2    30   Input ~ 0
+2way_close_1
+Text GLabel 14650 6200 2    30   Input ~ 0
 2way_open_1
 Text GLabel 13700 6200 0    30   Input ~ 0
 2way_ctrl_1_coil-
@@ -848,9 +848,9 @@ F 3 "" H 14500 6850 60  0001 C CNN
 $EndComp
 Text GLabel 14650 6700 2    30   Input ~ 0
 5V
-Text GLabel 14650 6850 2    30   Input ~ 0
-2way_close_2
 Text GLabel 14650 7000 2    30   Input ~ 0
+2way_close_2
+Text GLabel 14650 6850 2    30   Input ~ 0
 2way_open_2
 Text GLabel 13700 6850 0    30   Input ~ 0
 2way_ctrl_2_coil-
@@ -1469,9 +1469,9 @@ F 3 "" H 14500 7500 60  0001 C CNN
 $EndComp
 Text GLabel 14650 7350 2    30   Input ~ 0
 5V
-Text GLabel 14650 7500 2    30   Input ~ 0
-2way_close_3
 Text GLabel 14650 7650 2    30   Input ~ 0
+2way_close_3
+Text GLabel 14650 7500 2    30   Input ~ 0
 2way_open_3
 Text GLabel 13700 7500 0    30   Input ~ 0
 2way_ctrl_3_coil-
