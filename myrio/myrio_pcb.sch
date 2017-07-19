@@ -674,7 +674,7 @@ Tof_Ctrl_7_coil-
 Text GLabel 13450 2400 0    30   Input ~ 0
 tof7_power
 NoConn ~ 13450 2700
-Text GLabel 14400 2700 2    30   Input ~ 0
+Text GLabel 14400 2550 2    30   Input ~ 0
 5V
 $Comp
 L relay RE3
@@ -694,7 +694,7 @@ Tof_Ctrl_5_coil-
 Text GLabel 13450 1750 0    30   Input ~ 0
 tof5_power
 NoConn ~ 13450 2050
-Text GLabel 14400 2050 2    30   Input ~ 0
+Text GLabel 14400 1900 2    30   Input ~ 0
 5V
 $Comp
 L relay RE2
@@ -714,7 +714,7 @@ Tof_Ctrl_3_coil-
 Text GLabel 13450 1100 0    30   Input ~ 0
 tof3_power
 NoConn ~ 13450 1400
-Text GLabel 14400 1400 2    30   Input ~ 0
+Text GLabel 14400 1250 2    30   Input ~ 0
 5V
 $Comp
 L relay RE1
@@ -734,7 +734,7 @@ Tof_Ctrl_1_coil-
 Text GLabel 13450 450  0    30   Input ~ 0
 tof1_power
 NoConn ~ 13450 750 
-Text GLabel 14400 750  2    30   Input ~ 0
+Text GLabel 14400 600  2    30   Input ~ 0
 5V
 $Comp
 L relay RE12
@@ -754,7 +754,7 @@ Tof_Ctrl_8_coil-
 Text GLabel 15100 2400 0    30   Input ~ 0
 tof8_power
 NoConn ~ 15100 2700
-Text GLabel 16050 2700 2    30   Input ~ 0
+Text GLabel 16050 2550 2    30   Input ~ 0
 5V
 $Comp
 L relay RE11
@@ -774,7 +774,7 @@ Tof_Ctrl_6_coil-
 Text GLabel 15100 1750 0    30   Input ~ 0
 tof6_power
 NoConn ~ 15100 2050
-Text GLabel 16050 2050 2    30   Input ~ 0
+Text GLabel 16050 1900 2    30   Input ~ 0
 5V
 $Comp
 L relay RE10
@@ -794,7 +794,7 @@ Tof_Ctrl_4_coil-
 Text GLabel 15100 1100 0    30   Input ~ 0
 tof4_power
 NoConn ~ 15100 1400
-Text GLabel 16050 1400 2    30   Input ~ 0
+Text GLabel 16050 1250 2    30   Input ~ 0
 5V
 $Comp
 L relay RE9
@@ -814,7 +814,7 @@ Tof_Ctrl_2_coil-
 Text GLabel 15100 450  0    30   Input ~ 0
 tof2_power
 NoConn ~ 15100 750 
-Text GLabel 16050 750  2    30   Input ~ 0
+Text GLabel 16050 600  2    30   Input ~ 0
 5V
 $Comp
 L relay RE6
@@ -1682,7 +1682,7 @@ Text GLabel 21000 6850 0    30   Input ~ 0
 sense_pwr
 Text GLabel 20900 6100 3    30   Input ~ 0
 sense_pwr_ctrl
-Text GLabel 22450 7150 2    30   Input ~ 0
+Text GLabel 21950 7000 2    30   Input ~ 0
 5V
 Text GLabel 21000 7000 0    30   Input ~ 0
 sense_pwr_coil-
@@ -2012,23 +2012,23 @@ NoConn ~ 10650 2900
 NoConn ~ 10650 3000
 NoConn ~ 9050 2850
 NoConn ~ 9050 2950
-Text GLabel 21950 7000 2    30   Input ~ 0
+Text GLabel 22450 7150 2    30   Input ~ 0
 DGND
-Text GLabel 14400 600  2    30   Input ~ 0
+Text GLabel 14400 750  2    30   Input ~ 0
 DGND
-Text GLabel 14400 1250 2    30   Input ~ 0
+Text GLabel 14400 1400 2    30   Input ~ 0
 DGND
-Text GLabel 14400 1900 2    30   Input ~ 0
+Text GLabel 14400 2050 2    30   Input ~ 0
 DGND
-Text GLabel 14400 2550 2    30   Input ~ 0
+Text GLabel 14400 2700 2    30   Input ~ 0
 DGND
-Text GLabel 16050 600  2    30   Input ~ 0
+Text GLabel 16050 750  2    30   Input ~ 0
 DGND
-Text GLabel 16050 1250 2    30   Input ~ 0
+Text GLabel 16050 1400 2    30   Input ~ 0
 DGND
-Text GLabel 16050 1900 2    30   Input ~ 0
+Text GLabel 16050 2050 2    30   Input ~ 0
 DGND
-Text GLabel 16050 2550 2    30   Input ~ 0
+Text GLabel 16050 2700 2    30   Input ~ 0
 DGND
 $Comp
 L GND #PWR022
