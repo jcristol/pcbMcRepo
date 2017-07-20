@@ -2920,7 +2920,7 @@ L R R21
 U 1 1 597018D1
 P 9100 1750
 F 0 "R21" V 9180 1750 50  0000 C CNN
-F 1 "10K" V 9100 1750 50  0000 C CNN
+F 1 "500" V 9100 1750 50  0000 C CNN
 F 2 "" V 9030 1750 50  0000 C CNN
 F 3 "" H 9100 1750 50  0000 C CNN
 	1    9100 1750
@@ -3431,8 +3431,6 @@ Text GLabel 9100 1100 0    39   Input ~ 0
 battery_sensor_input
 Wire Wire Line
 	9100 1100 9500 1100
-Text Notes 8000 2250 0    60   ~ 0
-i think i accidentally wrote 10k think its supposed to be 1k
 Text GLabel 10700 1100 2    39   Input ~ 0
 battery+fuse
 $Comp
