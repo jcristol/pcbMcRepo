@@ -1,34 +1,6 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:bmp180
+LIBS:customSchematics
 LIBS:pod_health_pressure_sensor_board-cache
 EELAYER 25 0
 EELAYER END
@@ -45,54 +17,45 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RJ45 J1
-U 1 1 58D71404
-P 2200 2150
-F 0 "J1" H 2400 2650 50  0000 C CNN
-F 1 "RJ45" H 2050 2650 50  0000 C CNN
-F 2 "Connectors:RJ45_8" H 2200 2150 50  0001 C CNN
-F 3 "" H 2200 2150 50  0001 C CNN
-	1    2200 2150
-	0    -1   -1   0   
+L RJE71-188-1401-ND E1
+U 1 1 59711E0A
+P 2300 3300
+F 0 "E1" H 2600 3500 60  0000 C CNN
+F 1 "RJE71-188-1401-ND" H 2600 2800 60  0000 C CNN
+F 2 "" H 2300 3300 60  0001 C CNN
+F 3 "" H 2300 3300 60  0001 C CNN
+	1    2300 3300
+	-1   0    0    1   
 $EndComp
-NoConn ~ 1850 1600
-NoConn ~ 2650 1800
-NoConn ~ 2650 1900
 $Comp
 L bmp180 U1
-U 1 1 58ED5750
-P 3000 2450
-F 0 "U1" H 3600 2850 60  0000 C CNN
-F 1 "bmp180" H 3600 2750 60  0000 C CNN
-F 2 "bmp180_footprints:bmp180" H 3000 2450 60  0001 C CNN
-F 3 "" H 3000 2450 60  0001 C CNN
-	1    3000 2450
-	1    0    0    -1  
+U 1 1 59711E9E
+P 3100 2850
+F 0 "U1" H 3700 3250 60  0000 C CNN
+F 1 "bmp180" H 3700 3150 60  0000 C CNN
+F 2 "bmp180_footprints:bmp180" H 3100 2850 60  0001 C CNN
+F 3 "" H 3100 2850 60  0001 C CNN
+	1    3100 2850
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	3000 2000 2800 2000
-Wire Wire Line
-	2800 2000 2800 2500
-Wire Wire Line
-	2800 2500 2650 2500
-Wire Wire Line
-	3000 2300 2850 2300
-Wire Wire Line
-	2850 2300 2850 2400
-Wire Wire Line
-	2850 2400 2650 2400
-Wire Wire Line
-	3000 2100 2700 2100
-Wire Wire Line
-	2700 2100 2700 2300
-Wire Wire Line
-	2700 2300 2650 2300
-Wire Wire Line
-	3000 2200 2750 2200
-Wire Wire Line
-	2750 2200 2750 2000
-Wire Wire Line
-	2750 2000 2650 2000
-NoConn ~ 2650 2100
-NoConn ~ 2650 2200
+Text GLabel 3100 3300 0    30   Input ~ 0
+vin
+Text GLabel 3100 3200 0    30   Input ~ 0
+scl
+Text GLabel 3100 3100 0    30   Input ~ 0
+sda
+Text GLabel 3100 3000 0    30   Input ~ 0
+gnd
+Text GLabel 2500 3300 2    30   Input ~ 0
+vin
+Text GLabel 2500 3100 2    30   Input ~ 0
+scl
+Text GLabel 1600 3200 0    30   Input ~ 0
+sda
+Text GLabel 2500 3200 2    30   Input ~ 0
+gnd
+NoConn ~ 2500 3000
+NoConn ~ 1600 3000
+NoConn ~ 1600 3100
+NoConn ~ 1600 3300
 $EndSCHEMATC

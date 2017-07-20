@@ -1,6 +1,6 @@
-update=3/25/2017 10:36:42 PM
+update=Thursday, July 20, 2017 'PMt' 04:17:08 PM
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../customSchematics
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=bmp180
+LibName31=/Users/jcristol/Personalspace/pcbMcRepo/sensorPcbs/customSchematics/customSchematics

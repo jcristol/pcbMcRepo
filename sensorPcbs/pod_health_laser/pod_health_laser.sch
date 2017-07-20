@@ -1,34 +1,6 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:laser_sensor
+LIBS:customSchematics
 LIBS:pod_health_laser-cache
 EELAYER 25 0
 EELAYER END
@@ -44,22 +16,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RJ45 J1
-U 1 1 58DAC1B3
-P 3250 2900
-F 0 "J1" H 3450 3400 50  0000 C CNN
-F 1 "RJ45" H 3100 3400 50  0000 C CNN
-F 2 "Connectors:RJ45_8" H 3250 2900 50  0001 C CNN
-F 3 "" H 3250 2900 50  0001 C CNN
-	1    3250 2900
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 2900 2350
-NoConn ~ 3700 2550
-NoConn ~ 3700 2650
-NoConn ~ 3700 2750
-NoConn ~ 3700 2850
 NoConn ~ 3700 2950
 $Comp
 L laser_sensor U1
@@ -86,4 +42,19 @@ Wire Wire Line
 	4000 3000 3700 3000
 Wire Wire Line
 	3700 3000 3700 3050
+$Comp
+L RJE71-188-1401-ND E1
+U 1 1 59711D5E
+P 3500 3250
+F 0 "E1" H 3800 3450 60  0000 C CNN
+F 1 "RJE71-188-1401-ND" H 3800 2750 60  0000 C CNN
+F 2 "" H 3500 3250 60  0001 C CNN
+F 3 "" H 3500 3250 60  0001 C CNN
+	1    3500 3250
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2800 2950
+NoConn ~ 2800 3050
+NoConn ~ 2800 3150
+NoConn ~ 2800 3250
 $EndSCHEMATC

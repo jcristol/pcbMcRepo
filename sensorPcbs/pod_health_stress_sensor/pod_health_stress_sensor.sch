@@ -1,35 +1,7 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:fsensor
 LIBS:ads1115
+LIBS:customSchematics
 LIBS:pod_health_stress_sensor-cache
 EELAYER 25 0
 EELAYER END
@@ -45,17 +17,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RJ45 J1
-U 1 1 58DABE0D
-P 4650 1850
-F 0 "J1" H 4850 2350 50  0000 C CNN
-F 1 "RJ45" H 4500 2350 50  0000 C CNN
-F 2 "Connectors:RJ45_8" H 4650 1850 50  0001 C CNN
-F 3 "" H 4650 1850 50  0001 C CNN
-	1    4650 1850
-	0    -1   -1   0   
-$EndComp
 $Comp
 L POT RV1
 U 1 1 58EC08D9
@@ -80,19 +41,11 @@ F 3 "" H 6000 1700 60  0001 C CNN
 $EndComp
 Text GLabel 6000 1350 0    60   Input ~ 0
 5V
-Text GLabel 5100 2200 2    60   Input ~ 0
-5V
-Text GLabel 5100 2100 2    60   Input ~ 0
-GND
 Text GLabel 6000 1450 0    60   Input ~ 0
 GND
 Text GLabel 6000 1650 0    60   Input ~ 0
 SDA
 Text GLabel 6000 1550 0    60   Input ~ 0
-SCL
-Text GLabel 5100 1700 2    60   Input ~ 0
-SDA
-Text GLabel 5100 2000 2    60   Input ~ 0
 SCL
 $Comp
 L POT RV2
@@ -180,13 +133,8 @@ Text GLabel 4750 4500 3    60   Input ~ 0
 A2
 Text GLabel 5150 5050 3    60   Input ~ 0
 A3
-NoConn ~ 5100 1500
-NoConn ~ 5100 1600
-NoConn ~ 5100 1800
-NoConn ~ 5100 1900
 NoConn ~ 6000 1850
 NoConn ~ 6000 1750
-NoConn ~ 4300 1300
 Wire Wire Line
 	5150 2850 5150 5050
 Wire Wire Line
@@ -197,4 +145,27 @@ NoConn ~ 3400 3050
 NoConn ~ 3400 3950
 NoConn ~ 3400 4500
 NoConn ~ 3400 5050
+$Comp
+L RJE71-188-1401-ND E1
+U 1 1 59711F5E
+P 8150 1750
+F 0 "E1" H 8450 1950 60  0000 C CNN
+F 1 "RJE71-188-1401-ND" H 8450 1250 60  0000 C CNN
+F 2 "" H 8150 1750 60  0001 C CNN
+F 3 "" H 8150 1750 60  0001 C CNN
+	1    8150 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7950 1750 0    30   Input ~ 0
+5V
+Text GLabel 7950 1850 0    30   Input ~ 0
+GND
+Text GLabel 7950 1950 0    30   Input ~ 0
+SCL
+Text GLabel 8850 1850 2    30   Input ~ 0
+SDA
+NoConn ~ 7950 2050
+NoConn ~ 8850 1750
+NoConn ~ 8850 1950
+NoConn ~ 8850 2050
 $EndSCHEMATC
