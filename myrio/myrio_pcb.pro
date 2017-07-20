@@ -1,4 +1,4 @@
-update=6/15/2017 5:44:57 PM
+update=Thursday, July 20, 2017 'PMt' 12:43:43 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../../Documents/HyperLoop/PCB/ben_josh_pcbs/lib
@@ -66,5 +68,4 @@ LibName36=lib/stacked-rj45
 LibName37=lib/stacked-rj45_final
 LibName38=lib/stacked-rj45-led
 LibName39=lib/db89-single
-[general]
-version=1
+LibName40=lib/myrio_custom_components
