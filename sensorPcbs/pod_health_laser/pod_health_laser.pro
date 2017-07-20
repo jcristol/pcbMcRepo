@@ -1,4 +1,4 @@
-update=3/28/2017 3:18:30 PM
+update=Thursday, July 20, 2017 'PMt' 03:24:03 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../customSchematics
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=laser_sensor
+LibName31=customSchematics
