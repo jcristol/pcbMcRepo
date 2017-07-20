@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name laser_sensor)(type KiCad)(uri "$(KIPRJMOD)/laser_sensor.pretty")(options "")(descr ""))
+)
