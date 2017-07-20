@@ -3596,7 +3596,7 @@ true_batt_in
 Text Notes 4650 -1400 0    60   ~ 0
 battery fuse
 Wire Notes Line
-	4300 -1500 5350 -1500
+	4300 -1500 6350 -1500
 Wire Notes Line
 	5350 -1500 5350 -800
 $Comp
@@ -3625,4 +3625,8 @@ Wire Wire Line
 	5950 -1350 6100 -1350
 Text GLabel 5550 -1350 0    39   Input ~ 0
 12V
+Text Notes 5600 -1400 0    60   ~ 0
+router terminal
+Wire Notes Line
+	6350 -1500 6350 -800
 $EndSCHEMATC
