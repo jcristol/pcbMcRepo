@@ -1,4 +1,33 @@
 EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:vl6180
 LIBS:customSchematics
 LIBS:pod_health_time_of_flight-cache
@@ -22,7 +51,7 @@ U 1 1 58DA9061
 P 3350 2700
 F 0 "U1" H 3750 2600 60  0000 C CNN
 F 1 "VL6180" H 3750 2800 60  0000 C CNN
-F 2 "vl1680_footprint:VL6180" H 3350 2700 60  0001 C CNN
+F 2 "vl1680_footprint:tof" H 3350 2700 60  0001 C CNN
 F 3 "" H 3350 2700 60  0001 C CNN
 	1    3350 2700
 	1    0    0    -1  
