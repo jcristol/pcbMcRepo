@@ -1,0 +1,18 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 2pinscrew
+#
+DEF 2pinscrew S 0 40 Y Y 1 F N
+F0 "S" 0 -100 60 H V C CNN
+F1 "2pinscrew" 0 -400 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -250 -150 250 -350 0 1 0 N
+X pin1 1 -200 50 200 D 50 50 1 1 P
+X pin2 2 200 50 200 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
