@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /Users/jcristol/Personalspace/pcbMcRepo/sensorPcbs/pod_health_laser/pod_health_laser.sch)
-    (date "Thursday, July 20, 2017 'PMt' 04:36:12 PM")
-    (tool "Eeschema 4.0.6")
+    (source /Users/JoshuaCristol/Documents/HyperLoop/pcbMcRepo/sensorPcbs/pod_health_laser/pod_health_laser.sch)
+    (date "Thursday, July 20, 2017 'PMt' 07:34:51 PM")
+    (tool "Eeschema 4.0.3-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title pod_health_laser)
@@ -17,7 +17,7 @@
   (components
     (comp (ref U1)
       (value laser_sensor)
-      (footprint laser_sensor:laser_sensor)
+      (footprint laser_sensor:laser_sensor_new)
       (libsource (lib laser_sensor) (part laser_sensor))
       (sheetpath (names /) (tstamps /))
       (tstamp 58ED7D35))
@@ -51,9 +51,9 @@
         (pin (num 3) (name VCC) (type input)))))
   (libraries
     (library (logical laser_sensor)
-      (uri /Users/jcristol/Personalspace/pcbMcRepo/sensorPcbs/pod_health_laser/laser_sensor.lib))
+      (uri /Users/JoshuaCristol/Documents/HyperLoop/pcbMcRepo/sensorPcbs/pod_health_laser/laser_sensor.lib))
     (library (logical customSchematics)
-      (uri /Users/jcristol/Personalspace/pcbMcRepo/sensorPcbs/customSchematics/customSchematics.lib)))
+      (uri /Users/JoshuaCristol/Documents/HyperLoop/pcbMcRepo/sensorPcbs/customSchematics/customSchematics.lib)))
   (nets
     (net (code 1) (name "Net-(E1-Pad5)")
       (node (ref E1) (pin 5)))
