@@ -1,5 +1,34 @@
 EESchema Schematic File Version 2
 LIBS:myrio_pcb-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:relay
 LIBS:2pinscrew
 LIBS:bmp180
@@ -314,7 +343,7 @@ pressure3-
 Text GLabel 1200 3350 0    30   Input ~ 0
 pressure4-
 Text GLabel 3500 1650 2    30   Input ~ 0
-laser_digital
+laser_digital1
 Text GLabel 1850 4800 0    30   Input ~ 0
 friction_ctrl
 Text GLabel 1850 4950 0    30   Input ~ 0
@@ -1564,9 +1593,8 @@ F 3 "" H 21900 800 60  0001 C CNN
 	1    21900 800 
 	-1   0    0    1   
 $EndComp
-Text GLabel 22050 950  2    60   Input ~ 0
+Text GLabel 22050 800  2    60   Input ~ 0
 to_cap
-NoConn ~ 22050 800 
 Text GLabel 21100 650  0    30   Input ~ 0
 friction_pwr
 Text GLabel 21100 950  0    30   Input ~ 0
@@ -1745,7 +1773,7 @@ Text GLabel 5600 9650 0    30   Input ~ 0
 Text GLabel 5600 9750 0    30   Input ~ 0
 DGND
 Text GLabel 5600 9850 0    30   Input ~ 0
-main_laser
+main_laser1
 NoConn ~ 5600 10150
 NoConn ~ 5600 10350
 Text Notes 750  9200 0    60   ~ 0
@@ -1856,7 +1884,6 @@ Text Notes 9150 2600 0    139  ~ 0
 Power Sensors
 Text GLabel 8150 3000 1    39   Input ~ 0
 battery_sensor_input
-NoConn ~ 2600 1150
 NoConn ~ 2600 1250
 NoConn ~ 3100 950 
 NoConn ~ 3100 850 
@@ -2246,7 +2273,6 @@ NoConn ~ 1800 12100
 NoConn ~ 1950 12100
 Text GLabel 14600 3850 2    30   Input ~ 0
 24V
-NoConn ~ 5600 10250
 NoConn ~ 7450 2850
 NoConn ~ 7450 2950
 Text GLabel 6550 3200 0    30   Input ~ 0
@@ -2260,31 +2286,20 @@ IMU
 Text GLabel 10650 6150 3    30   Input ~ 0
 DGND
 Text GLabel 10550 5350 0    30   Input ~ 0
-main_laser
+main_laser1
 $Comp
 L R R30
 U 1 1 58EA924E
 P 10650 5500
 F 0 "R30" V 10730 5500 50  0000 C CNN
-F 1 "R" V 10650 5500 50  0000 C CNN
+F 1 "12K" V 10650 5500 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 10580 5500 50  0001 C CNN
 F 3 "" H 10650 5500 50  0000 C CNN
 	1    10650 5500
 	1    0    0    -1  
 $EndComp
-$Comp
-L ZENER D21
-U 1 1 58EA93BD
-P 10650 5950
-F 0 "D21" H 10650 6050 50  0000 C CNN
-F 1 "ZENER" H 10650 5850 50  0000 C CNN
-F 2 "Discret:D3" H 10650 5950 50  0001 C CNN
-F 3 "" H 10650 5950 50  0000 C CNN
-	1    10650 5950
-	0    1    1    0   
-$EndComp
 Text GLabel 10750 5700 2    30   Input ~ 0
-laser_digital
+laser_digital1
 Text Notes 10100 5250 0    60   ~ 0
 Main Laser Circuit
 $Comp
@@ -2421,8 +2436,6 @@ Text GLabel 23400 900  0    60   Input ~ 0
 to_cap
 Text GLabel 23700 900  2    30   Input ~ 0
 magnetic_pwr
-NoConn ~ 5600 9950
-NoConn ~ 5600 10050
 NoConn ~ 6700 10150
 NoConn ~ 6700 10350
 $Comp
@@ -2905,12 +2918,12 @@ NoConn ~ 3550 11700
 NoConn ~ -250 11100
 NoConn ~ -250 11600
 $Comp
-L LED D23
+L LED-RESCUE-myrio_pcb D23
 U 1 1 596FFCA6
 P 9100 1300
 F 0 "D23" H 9100 1400 50  0000 C CNN
 F 1 "LED" H 9100 1200 50  0000 C CNN
-F 2 "" H 9100 1300 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 9100 1300 50  0001 C CNN
 F 3 "" H 9100 1300 50  0000 C CNN
 	1    9100 1300
 	0    -1   -1   0   
@@ -2921,7 +2934,7 @@ U 1 1 597018D1
 P 9100 1750
 F 0 "R21" V 9180 1750 50  0000 C CNN
 F 1 "500" V 9100 1750 50  0000 C CNN
-F 2 "" V 9030 1750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9030 1750 50  0001 C CNN
 F 3 "" H 9100 1750 50  0000 C CNN
 	1    9100 1750
 	1    0    0    -1  
@@ -2943,7 +2956,7 @@ U 1 1 59710165
 P 10050 1000
 F 0 "S1" H 10050 1050 60  0000 C CNN
 F 1 "L101011MS02Q" H 10100 1250 60  0000 C CNN
-F 2 "" H 10050 1000 60  0001 C CNN
+F 2 "footprints:L101011MS02Q" H 10050 1000 60  0001 C CNN
 F 3 "" H 10050 1000 60  0001 C CNN
 	1    10050 1000
 	1    0    0    -1  
@@ -3439,7 +3452,7 @@ U 1 1 59714B73
 P 4900 -1650
 F 0 "T1" H 5100 -1550 60  0000 C CNN
 F 1 "Phoenix_Contact_1935187" H 5450 -1400 60  0000 C CNN
-F 2 "" H 4900 -1650 60  0001 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 4900 -1650 60  0001 C CNN
 F 3 "" H 4900 -1650 60  0001 C CNN
 	1    4900 -1650
 	1    0    0    -1  
@@ -3476,7 +3489,7 @@ U 1 1 59715FB3
 P 6300 -1650
 F 0 "T3" H 6500 -1550 60  0000 C CNN
 F 1 "Phoenix_Contact_1935187" H 6850 -1400 60  0000 C CNN
-F 2 "" H 6300 -1650 60  0001 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 6300 -1650 60  0001 C CNN
 F 3 "" H 6300 -1650 60  0001 C CNN
 	1    6300 -1650
 	1    0    0    -1  
@@ -3515,7 +3528,7 @@ U 1 1 59717508
 P 4900 -700
 F 0 "T2" H 5100 -600 60  0000 C CNN
 F 1 "Phoenix_Contact_1935187" H 5450 -450 60  0000 C CNN
-F 2 "" H 4900 -700 60  0001 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 4900 -700 60  0001 C CNN
 F 3 "" H 4900 -700 60  0001 C CNN
 	1    4900 -700
 	1    0    0    -1  
@@ -3545,7 +3558,7 @@ U 1 1 597198B8
 P 6300 -700
 F 0 "T4" H 6500 -600 60  0000 C CNN
 F 1 "Phoenix_Contact_1935187" H 6850 -450 60  0000 C CNN
-F 2 "" H 6300 -700 60  0001 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 6300 -700 60  0001 C CNN
 F 3 "" H 6300 -700 60  0001 C CNN
 	1    6300 -700
 	1    0    0    -1  
@@ -3622,4 +3635,63 @@ F 3 "" H 7150 1800 50  0001 C CNN
 $EndComp
 Text GLabel 7150 1800 3    39   Input ~ 0
 battery
+$Comp
+L R R33
+U 1 1 59787DC0
+P 10650 5900
+F 0 "R33" V 10730 5900 50  0000 C CNN
+F 1 "2K" V 10650 5900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 10580 5900 50  0001 C CNN
+F 3 "" H 10650 5900 50  0000 C CNN
+	1    10650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 6050 10650 6150
+Text GLabel 10100 6150 3    30   Input ~ 0
+DGND
+Text GLabel 10000 5350 0    30   Input ~ 0
+main_laser2
+$Comp
+L R R31
+U 1 1 59789155
+P 10100 5500
+F 0 "R31" V 10180 5500 50  0000 C CNN
+F 1 "12K" V 10100 5500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 10030 5500 50  0001 C CNN
+F 3 "" H 10100 5500 50  0000 C CNN
+	1    10100 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 10200 5700 2    30   Input ~ 0
+laser_digital2
+Wire Wire Line
+	10100 5650 10100 5750
+Wire Wire Line
+	10100 5700 10200 5700
+Connection ~ 10100 5700
+Wire Wire Line
+	10000 5350 10100 5350
+$Comp
+L R R32
+U 1 1 59789160
+P 10100 5900
+F 0 "R32" V 10180 5900 50  0000 C CNN
+F 1 "2K" V 10100 5900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 10030 5900 50  0001 C CNN
+F 3 "" H 10100 5900 50  0000 C CNN
+	1    10100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 6050 10100 6150
+Text GLabel 2600 1150 0    30   Input ~ 0
+laser_digital2
+Text GLabel 5600 9950 0    30   Input ~ 0
+24V
+Text GLabel 5600 10050 0    30   Input ~ 0
+DGND
+Text GLabel 5600 10250 0    30   Input ~ 0
+main_laser2
+NoConn ~ 22050 950 
 $EndSCHEMATC
