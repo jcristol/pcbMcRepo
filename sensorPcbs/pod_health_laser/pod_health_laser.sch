@@ -1,4 +1,33 @@
 EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:laser_sensor
 LIBS:customSchematics
 LIBS:pod_health_laser-cache
@@ -23,7 +52,7 @@ U 1 1 58ED7D35
 P 4000 3150
 F 0 "U1" H 4800 3100 60  0000 C CNN
 F 1 "laser_sensor" H 4800 3200 60  0000 C CNN
-F 2 "laser_sensor:laser_sensor" H 4000 3150 60  0001 C CNN
+F 2 "laser_sensor:laser_sensor_new" H 4000 3150 60  0001 C CNN
 F 3 "" H 4000 3150 60  0001 C CNN
 	1    4000 3150
 	1    0    0    -1  

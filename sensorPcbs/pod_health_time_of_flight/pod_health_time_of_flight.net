@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /Users/jcristol/Personalspace/pcbMcRepo/sensorPcbs/pod_health_time_of_flight/pod_health_time_of_flight.sch)
-    (date "Thursday, July 20, 2017 'PMt' 05:04:44 PM")
-    (tool "Eeschema 4.0.6")
+    (source /Users/JoshuaCristol/Documents/HyperLoop/pcbMcRepo/sensorPcbs/pod_health_time_of_flight/pod_health_time_of_flight.sch)
+    (date "Thursday, July 20, 2017 'PMt' 07:52:18 PM")
+    (tool "Eeschema 4.0.3-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title pod_health_time_of_flight)
@@ -17,7 +17,7 @@
   (components
     (comp (ref U1)
       (value VL6180)
-      (footprint vl1680_footprint:VL6180)
+      (footprint vl1680_footprint:tof)
       (libsource (lib vl6180) (part VL6180))
       (sheetpath (names /) (tstamps /))
       (tstamp 58DA9061))
@@ -54,9 +54,9 @@
         (pin (num 6) (name GND) (type input)))))
   (libraries
     (library (logical vl6180)
-      (uri /Users/jcristol/Personalspace/pcbMcRepo/sensorPcbs/pod_health_time_of_flight/vl6180.lib))
+      (uri /Users/JoshuaCristol/Documents/HyperLoop/pcbMcRepo/sensorPcbs/pod_health_time_of_flight/vl6180.lib))
     (library (logical customSchematics)
-      (uri /Users/jcristol/Personalspace/pcbMcRepo/sensorPcbs/customSchematics/customSchematics.lib)))
+      (uri /Users/JoshuaCristol/Documents/HyperLoop/pcbMcRepo/sensorPcbs/customSchematics/customSchematics.lib)))
   (nets
     (net (code 1) (name "Net-(E1-Pad4)")
       (node (ref E1) (pin 4)))
