@@ -3302,7 +3302,7 @@ Wire Wire Line
 Wire Wire Line
 	22050 1450 22550 1450
 Wire Wire Line
-	22050 2150 22550 2150
+	22550 2150 22050 2150
 Wire Wire Line
 	3100 1650 3500 1650
 Wire Wire Line
@@ -3407,7 +3407,7 @@ Wire Notes Line
 Wire Notes Line
 	700  14000 700  12600
 Wire Wire Line
-	22550 2150 22550 1450
+	22550 1450 22550 2150
 Wire Wire Line
 	22550 1800 23050 1800
 Connection ~ 22550 1800
@@ -3695,17 +3695,6 @@ Text GLabel 5600 10250 0    30   Input ~ 0
 main_laser2
 NoConn ~ 22050 950 
 $Comp
-L C C8
-U 1 1 59783929
-P 8150 1950
-F 0 "C8" H 8175 2050 50  0000 L CNN
-F 1 "C" H 8175 1850 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 8188 1800 50  0001 C CNN
-F 3 "" H 8150 1950 50  0001 C CNN
-	1    8150 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C5
 U 1 1 5978666D
 P 7600 1950
@@ -3770,13 +3759,9 @@ Connection ~ 7500 1500
 Connection ~ 6650 1550
 Connection ~ 7050 1550
 Wire Wire Line
-	6800 2100 8150 2100
-Connection ~ 7600 2100
-Wire Wire Line
 	6800 2100 6800 1750
 Wire Wire Line
 	6800 1750 6650 1750
-Connection ~ 7150 2100
 $Comp
 L C C7
 U 1 1 5978A2F0
@@ -3816,4 +3801,8 @@ Text GLabel 7850 3000 1    30   Input ~ 0
 DGND
 Text GLabel 9450 2950 1    30   Input ~ 0
 DGND
+Wire Wire Line
+	6800 2100 7650 2100
+Connection ~ 7150 2100
+Connection ~ 7600 2100
 $EndSCHEMATC
