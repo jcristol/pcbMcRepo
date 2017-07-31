@@ -1593,7 +1593,7 @@ F 3 "" H 21900 800 60  0001 C CNN
 	1    21900 800 
 	-1   0    0    1   
 $EndComp
-Text GLabel 22050 800  2    60   Input ~ 0
+Text GLabel 22050 950  2    60   Input ~ 0
 to_cap
 Text GLabel 21100 650  0    30   Input ~ 0
 friction_pwr
@@ -2946,17 +2946,6 @@ F 3 "" H 9100 1900 50  0000 C CNN
 	1    9100 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L L101011MS02Q S1
-U 1 1 59710165
-P 10050 1000
-F 0 "S1" H 10050 1050 60  0000 C CNN
-F 1 "L101011MS02Q" H 10100 1250 60  0000 C CNN
-F 2 "footprints:L101011MS02Q" H 10050 1000 60  0001 C CNN
-F 3 "" H 10050 1000 60  0001 C CNN
-	1    10050 1000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1400 3150 2550 3150
 Wire Wire Line
@@ -3439,7 +3428,7 @@ Wire Wire Line
 Text GLabel 9100 1100 0    39   Input ~ 0
 battery_sensor_input
 Wire Wire Line
-	9100 1100 9500 1100
+	9100 1100 10700 1100
 Text GLabel 10700 1100 2    39   Input ~ 0
 battery+fuse
 $Comp
@@ -3689,7 +3678,7 @@ Text GLabel 5600 10050 0    30   Input ~ 0
 DGND
 Text GLabel 5600 10250 0    30   Input ~ 0
 main_laser2
-NoConn ~ 22050 950 
+NoConn ~ 22050 800 
 $Comp
 L C C5
 U 1 1 5978666D
@@ -3812,14 +3801,6 @@ F 3 "" H 13950 7900 50  0000 C CNN
 	1    13950 7900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	13700 7500 13700 7600
-Wire Wire Line
-	13700 7600 13250 7600
-Wire Wire Line
-	13250 7600 13250 7900
-Wire Wire Line
-	13250 7900 13800 7900
 $Comp
 L C C8
 U 1 1 597F6179
@@ -3863,4 +3844,12 @@ F 3 "" H 15050 8200 50  0000 C CNN
 $EndComp
 NoConn ~ 2600 1150
 NoConn ~ 5700 12800
+Text Notes 8200 1350 0    60   ~ 0
+check
+Text Notes 13500 7250 0    60   ~ 0
+check - why is the r connected to coil negative
+Wire Wire Line
+	13700 7650 13700 7900
+Wire Wire Line
+	13700 7900 13800 7900
 $EndSCHEMATC

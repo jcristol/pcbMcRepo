@@ -1,5 +1,34 @@
 EESchema Schematic File Version 2
 LIBS:myrio_pcb-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:relay
 LIBS:2pinscrew
 LIBS:bmp180
@@ -314,7 +343,7 @@ pressure3-
 Text GLabel 1200 3350 0    30   Input ~ 0
 pressure4-
 Text GLabel 3500 1650 2    30   Input ~ 0
-laser_digital
+laser_digital1
 Text GLabel 1850 4800 0    30   Input ~ 0
 friction_ctrl
 Text GLabel 1850 4950 0    30   Input ~ 0
@@ -988,102 +1017,102 @@ Text Notes 14600 5760 2    99   ~ 0
 $Comp
 L PN2222A Q1
 U 1 1 58DD3FFB
-P 13200 8750
-F 0 "Q1" H 13400 8825 50  0000 L CNN
-F 1 "PN2222A" H 13400 8750 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 13400 8675 50  0001 L CIN
-F 3 "" H 13200 8750 50  0000 L CNN
-	1    13200 8750
+P 13150 8900
+F 0 "Q1" H 13350 8975 50  0000 L CNN
+F 1 "PN2222A" H 13350 8900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 13350 8825 50  0001 L CIN
+F 3 "" H 13150 8900 50  0000 L CNN
+	1    13150 8900
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R1
 U 1 1 58DD4001
-P 13000 8900
-F 0 "R1" V 13080 8900 50  0000 C CNN
-F 1 "R" V 13000 8900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 12930 8900 50  0001 C CNN
-F 3 "" H 13000 8900 50  0000 C CNN
-	1    13000 8900
+P 12950 9050
+F 0 "R1" V 13030 9050 50  0000 C CNN
+F 1 "R" V 12950 9050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 12880 9050 50  0001 C CNN
+F 3 "" H 12950 9050 50  0000 C CNN
+	1    12950 9050
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR07
 U 1 1 58DD4007
-P 13300 8950
-F 0 "#PWR07" H 13300 8700 50  0001 C CNN
-F 1 "GND" H 13300 8800 50  0000 C CNN
-F 2 "" H 13300 8950 50  0000 C CNN
-F 3 "" H 13300 8950 50  0000 C CNN
-	1    13300 8950
+P 13250 9100
+F 0 "#PWR07" H 13250 8850 50  0001 C CNN
+F 1 "GND" H 13250 8950 50  0000 C CNN
+F 2 "" H 13250 9100 50  0000 C CNN
+F 3 "" H 13250 9100 50  0000 C CNN
+	1    13250 9100
 	1    0    0    -1  
 $EndComp
 $Comp
 L D D1
 U 1 1 58DD400D
-P 13450 8400
-F 0 "D1" H 13450 8500 50  0000 C CNN
-F 1 "D" H 13450 8300 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 13450 8400 50  0001 C CNN
-F 3 "" H 13450 8400 50  0000 C CNN
-	1    13450 8400
+P 13400 8550
+F 0 "D1" H 13400 8650 50  0000 C CNN
+F 1 "D" H 13400 8450 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 13400 8550 50  0001 C CNN
+F 3 "" H 13400 8550 50  0000 C CNN
+	1    13400 8550
 	-1   0    0    1   
 $EndComp
-Text GLabel 13600 8400 2    30   Input ~ 0
+Text GLabel 13550 8550 2    30   Input ~ 0
 5V
-Text GLabel 13000 9050 3    30   Input ~ 0
+Text GLabel 12950 9200 3    30   Input ~ 0
 2way_ctrl_1
-Text GLabel 12900 8550 3    30   Input ~ 0
+Text GLabel 12850 8700 3    30   Input ~ 0
 2way_ctrl_1_coil-
 $Comp
 L PN2222A Q2
 U 1 1 58DD4019
-P 14300 8750
-F 0 "Q2" H 14500 8825 50  0000 L CNN
-F 1 "PN2222A" H 14500 8750 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 14500 8675 50  0001 L CIN
-F 3 "" H 14300 8750 50  0000 L CNN
-	1    14300 8750
+P 14250 8900
+F 0 "Q2" H 14450 8975 50  0000 L CNN
+F 1 "PN2222A" H 14450 8900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 14450 8825 50  0001 L CIN
+F 3 "" H 14250 8900 50  0000 L CNN
+	1    14250 8900
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R2
 U 1 1 58DD401F
-P 14100 8900
-F 0 "R2" V 14180 8900 50  0000 C CNN
-F 1 "R" V 14100 8900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 14030 8900 50  0001 C CNN
-F 3 "" H 14100 8900 50  0000 C CNN
-	1    14100 8900
+P 14050 9050
+F 0 "R2" V 14130 9050 50  0000 C CNN
+F 1 "R" V 14050 9050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13980 9050 50  0001 C CNN
+F 3 "" H 14050 9050 50  0000 C CNN
+	1    14050 9050
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR08
 U 1 1 58DD4025
-P 14400 8950
-F 0 "#PWR08" H 14400 8700 50  0001 C CNN
-F 1 "GND" H 14400 8800 50  0000 C CNN
-F 2 "" H 14400 8950 50  0000 C CNN
-F 3 "" H 14400 8950 50  0000 C CNN
-	1    14400 8950
+P 14350 9100
+F 0 "#PWR08" H 14350 8850 50  0001 C CNN
+F 1 "GND" H 14350 8950 50  0000 C CNN
+F 2 "" H 14350 9100 50  0000 C CNN
+F 3 "" H 14350 9100 50  0000 C CNN
+	1    14350 9100
 	1    0    0    -1  
 $EndComp
 $Comp
 L D D2
 U 1 1 58DD402B
-P 14550 8400
-F 0 "D2" H 14550 8500 50  0000 C CNN
-F 1 "D" H 14550 8300 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 14550 8400 50  0001 C CNN
-F 3 "" H 14550 8400 50  0000 C CNN
-	1    14550 8400
+P 14500 8550
+F 0 "D2" H 14500 8650 50  0000 C CNN
+F 1 "D" H 14500 8450 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 14500 8550 50  0001 C CNN
+F 3 "" H 14500 8550 50  0000 C CNN
+	1    14500 8550
 	-1   0    0    1   
 $EndComp
-Text GLabel 14700 8400 2    30   Input ~ 0
+Text GLabel 14650 8550 2    30   Input ~ 0
 5V
-Text GLabel 14100 9050 3    30   Input ~ 0
+Text GLabel 14050 9200 3    30   Input ~ 0
 2way_ctrl_2
-Text GLabel 14000 8550 3    30   Input ~ 0
+Text GLabel 13950 8700 3    30   Input ~ 0
 2way_ctrl_2_coil-
 Text Notes 14300 8100 2    99   ~ 0
 2-Way BJT
@@ -1566,7 +1595,6 @@ F 3 "" H 21900 800 60  0001 C CNN
 $EndComp
 Text GLabel 22050 950  2    60   Input ~ 0
 to_cap
-NoConn ~ 22050 800 
 Text GLabel 21100 650  0    30   Input ~ 0
 friction_pwr
 Text GLabel 21100 950  0    30   Input ~ 0
@@ -1745,7 +1773,7 @@ Text GLabel 5600 9650 0    30   Input ~ 0
 Text GLabel 5600 9750 0    30   Input ~ 0
 DGND
 Text GLabel 5600 9850 0    30   Input ~ 0
-main_laser
+main_laser1
 NoConn ~ 5600 10150
 NoConn ~ 5600 10350
 Text Notes 750  9200 0    60   ~ 0
@@ -1856,7 +1884,6 @@ Text Notes 9150 2600 0    139  ~ 0
 Power Sensors
 Text GLabel 8150 3000 1    39   Input ~ 0
 battery_sensor_input
-NoConn ~ 2600 1150
 NoConn ~ 2600 1250
 NoConn ~ 3100 950 
 NoConn ~ 3100 850 
@@ -1920,23 +1947,23 @@ $EndComp
 $Comp
 L PWR_FLAG #FLG019
 U 1 1 58EB21F4
-P 7050 1300
-F 0 "#FLG019" H 7050 1375 50  0001 C CNN
-F 1 "PWR_FLAG" H 7050 1450 50  0000 C CNN
-F 2 "" H 7050 1300 50  0001 C CNN
-F 3 "" H 7050 1300 50  0001 C CNN
-	1    7050 1300
+P 7050 1200
+F 0 "#FLG019" H 7050 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 7050 1350 50  0000 C CNN
+F 2 "" H 7050 1200 50  0001 C CNN
+F 3 "" H 7050 1200 50  0001 C CNN
+	1    7050 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR020
 U 1 1 58EB3FDB
-P 7650 1350
-F 0 "#PWR020" H 7650 1200 50  0001 C CNN
-F 1 "VCC" H 7650 1500 50  0000 C CNN
-F 2 "" H 7650 1350 50  0001 C CNN
-F 3 "" H 7650 1350 50  0001 C CNN
-	1    7650 1350
+P 7700 1250
+F 0 "#PWR020" H 7700 1100 50  0001 C CNN
+F 1 "VCC" H 7700 1400 50  0000 C CNN
+F 2 "" H 7700 1250 50  0001 C CNN
+F 3 "" H 7700 1250 50  0001 C CNN
+	1    7700 1250
 	-1   0    0    1   
 $EndComp
 NoConn ~ 10650 2900
@@ -2246,7 +2273,6 @@ NoConn ~ 1800 12100
 NoConn ~ 1950 12100
 Text GLabel 14600 3850 2    30   Input ~ 0
 24V
-NoConn ~ 5600 10250
 NoConn ~ 7450 2850
 NoConn ~ 7450 2950
 Text GLabel 6550 3200 0    30   Input ~ 0
@@ -2260,31 +2286,20 @@ IMU
 Text GLabel 10650 6150 3    30   Input ~ 0
 DGND
 Text GLabel 10550 5350 0    30   Input ~ 0
-main_laser
+main_laser1
 $Comp
 L R R30
 U 1 1 58EA924E
 P 10650 5500
 F 0 "R30" V 10730 5500 50  0000 C CNN
-F 1 "R" V 10650 5500 50  0000 C CNN
+F 1 "12K" V 10650 5500 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 10580 5500 50  0001 C CNN
 F 3 "" H 10650 5500 50  0000 C CNN
 	1    10650 5500
 	1    0    0    -1  
 $EndComp
-$Comp
-L ZENER D21
-U 1 1 58EA93BD
-P 10650 5950
-F 0 "D21" H 10650 6050 50  0000 C CNN
-F 1 "ZENER" H 10650 5850 50  0000 C CNN
-F 2 "Discret:D3" H 10650 5950 50  0001 C CNN
-F 3 "" H 10650 5950 50  0000 C CNN
-	1    10650 5950
-	0    1    1    0   
-$EndComp
 Text GLabel 10750 5700 2    30   Input ~ 0
-laser_digital
+laser_digital1
 Text Notes 10100 5250 0    60   ~ 0
 Main Laser Circuit
 $Comp
@@ -2421,8 +2436,6 @@ Text GLabel 23400 900  0    60   Input ~ 0
 to_cap
 Text GLabel 23700 900  2    30   Input ~ 0
 magnetic_pwr
-NoConn ~ 5600 9950
-NoConn ~ 5600 10050
 NoConn ~ 6700 10150
 NoConn ~ 6700 10350
 $Comp
@@ -2686,17 +2699,17 @@ F 3 "" H 4550 13200 50  0000 C CNN
 	1    4550 13200
 	1    0    0    -1  
 $EndComp
-Text GLabel 7900 1300 2    30   Input ~ 0
+Text GLabel 8000 1200 2    30   Input ~ 0
 sense_pwr
 $Comp
 L PWR_FLAG #FLG038
 U 1 1 58F6EC3C
-P 7900 1300
-F 0 "#FLG038" H 7900 1375 50  0001 C CNN
-F 1 "PWR_FLAG" H 7900 1450 50  0000 C CNN
-F 2 "" H 7900 1300 50  0001 C CNN
-F 3 "" H 7900 1300 50  0001 C CNN
-	1    7900 1300
+P 8000 1200
+F 0 "#FLG038" H 8000 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 8000 1350 50  0000 C CNN
+F 2 "" H 8000 1200 50  0001 C CNN
+F 3 "" H 8000 1200 50  0001 C CNN
+	1    8000 1200
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4700 13000
@@ -2729,8 +2742,6 @@ NoConn ~ 9850 5600
 NoConn ~ 9850 5700
 NoConn ~ 9850 5900
 NoConn ~ 9850 6000
-Text GLabel 1850 4600 0    60   Input ~ 0
-motor_ctrl
 $Comp
 L stacked-DB9 U8
 U 1 1 5934A4EE
@@ -2744,8 +2755,6 @@ F 3 "" H 5250 13600 60  0001 C CNN
 $EndComp
 NoConn ~ 4700 12800
 NoConn ~ 4700 12900
-Text GLabel 5700 12800 2    60   Input ~ 0
-motor_ctrl
 Text GLabel 5700 12900 2    30   Input ~ 0
 24V
 $Comp
@@ -2767,19 +2776,19 @@ NoConn ~ 5700 13500
 NoConn ~ 5700 13600
 Text GLabel 8150 3200 0    30   Input ~ 0
 12V
-Text GLabel 7650 1200 1    30   Input ~ 0
+Text GLabel 7700 1100 1    30   Input ~ 0
 24V
-Text GLabel 7050 1350 0    30   Input ~ 0
+Text GLabel 7050 1250 0    30   Input ~ 0
 12V
 $Comp
 L PWR_FLAG #FLG040
 U 1 1 5934D9E0
-P 7450 1300
-F 0 "#FLG040" H 7450 1375 50  0001 C CNN
-F 1 "PWR_FLAG" H 7450 1450 50  0000 C CNN
-F 2 "" H 7450 1300 50  0001 C CNN
-F 3 "" H 7450 1300 50  0001 C CNN
-	1    7450 1300
+P 7500 1200
+F 0 "#FLG040" H 7500 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 7500 1350 50  0000 C CNN
+F 2 "" H 7500 1200 50  0001 C CNN
+F 3 "" H 7500 1200 50  0001 C CNN
+	1    7500 1200
 	1    0    0    -1  
 $EndComp
 Text Notes 5500 -2450 0    300  ~ 60
@@ -2905,12 +2914,12 @@ NoConn ~ 3550 11700
 NoConn ~ -250 11100
 NoConn ~ -250 11600
 $Comp
-L LED D23
+L LED-RESCUE-myrio_pcb D23
 U 1 1 596FFCA6
 P 9100 1300
 F 0 "D23" H 9100 1400 50  0000 C CNN
 F 1 "LED" H 9100 1200 50  0000 C CNN
-F 2 "" H 9100 1300 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 9100 1300 50  0001 C CNN
 F 3 "" H 9100 1300 50  0000 C CNN
 	1    9100 1300
 	0    -1   -1   0   
@@ -2920,8 +2929,8 @@ L R R21
 U 1 1 597018D1
 P 9100 1750
 F 0 "R21" V 9180 1750 50  0000 C CNN
-F 1 "10K" V 9100 1750 50  0000 C CNN
-F 2 "" V 9030 1750 50  0000 C CNN
+F 1 "500" V 9100 1750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9030 1750 50  0001 C CNN
 F 3 "" H 9100 1750 50  0000 C CNN
 	1    9100 1750
 	1    0    0    -1  
@@ -2943,7 +2952,7 @@ U 1 1 59710165
 P 10050 1000
 F 0 "S1" H 10050 1050 60  0000 C CNN
 F 1 "L101011MS02Q" H 10100 1250 60  0000 C CNN
-F 2 "" H 10050 1000 60  0001 C CNN
+F 2 "footprints:L101011MS02Q" H 10050 1000 60  0001 C CNN
 F 3 "" H 10050 1000 60  0001 C CNN
 	1    10050 1000
 	1    0    0    -1  
@@ -3227,17 +3236,17 @@ Wire Notes Line
 Wire Notes Line
 	16400 -800 25550 -800
 Wire Wire Line
-	13300 8400 13300 8550
+	13250 8550 13250 8700
 Wire Wire Line
-	12900 8550 12900 8400
+	12850 8700 12850 8550
 Wire Wire Line
-	12900 8400 13300 8400
+	12850 8550 13250 8550
 Wire Wire Line
-	14400 8400 14400 8550
+	14350 8550 14350 8700
 Wire Wire Line
-	14000 8550 14000 8400
+	13950 8700 13950 8550
 Wire Wire Line
-	14000 8400 14400 8400
+	13950 8550 14350 8550
 Wire Wire Line
 	18250 6100 18250 6250
 Wire Wire Line
@@ -3289,7 +3298,7 @@ Wire Wire Line
 Wire Wire Line
 	22050 1450 22550 1450
 Wire Wire Line
-	22050 2150 22550 2150
+	22550 2150 22050 2150
 Wire Wire Line
 	3100 1650 3500 1650
 Wire Wire Line
@@ -3394,7 +3403,7 @@ Wire Notes Line
 Wire Notes Line
 	700  14000 700  12600
 Wire Wire Line
-	22550 2150 22550 1450
+	22550 1450 22550 2150
 Wire Wire Line
 	22550 1800 23050 1800
 Connection ~ 22550 1800
@@ -3411,12 +3420,12 @@ Wire Wire Line
 Wire Wire Line
 	5700 12950 5700 13000
 Wire Wire Line
-	7050 1300 7050 1350
+	7050 1200 7050 1250
 Wire Wire Line
-	7650 1200 7650 1350
+	7700 1100 7700 1250
 Wire Wire Line
-	7450 1300 7650 1300
-Connection ~ 7650 1300
+	7500 1200 7700 1200
+Connection ~ 7700 1200
 Wire Notes Line
 	700  14000 6500 14000
 Wire Notes Line
@@ -3431,8 +3440,6 @@ Text GLabel 9100 1100 0    39   Input ~ 0
 battery_sensor_input
 Wire Wire Line
 	9100 1100 9500 1100
-Text Notes 8000 2250 0    60   ~ 0
-i think i accidentally wrote 10k think its supposed to be 1k
 Text GLabel 10700 1100 2    39   Input ~ 0
 battery+fuse
 $Comp
@@ -3441,7 +3448,7 @@ U 1 1 59714B73
 P 4900 -1650
 F 0 "T1" H 5100 -1550 60  0000 C CNN
 F 1 "Phoenix_Contact_1935187" H 5450 -1400 60  0000 C CNN
-F 2 "" H 4900 -1650 60  0001 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 4900 -1650 60  0001 C CNN
 F 3 "" H 4900 -1650 60  0001 C CNN
 	1    4900 -1650
 	1    0    0    -1  
@@ -3478,7 +3485,7 @@ U 1 1 59715FB3
 P 6300 -1650
 F 0 "T3" H 6500 -1550 60  0000 C CNN
 F 1 "Phoenix_Contact_1935187" H 6850 -1400 60  0000 C CNN
-F 2 "" H 6300 -1650 60  0001 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 6300 -1650 60  0001 C CNN
 F 3 "" H 6300 -1650 60  0001 C CNN
 	1    6300 -1650
 	1    0    0    -1  
@@ -3517,7 +3524,7 @@ U 1 1 59717508
 P 4900 -700
 F 0 "T2" H 5100 -600 60  0000 C CNN
 F 1 "Phoenix_Contact_1935187" H 5450 -450 60  0000 C CNN
-F 2 "" H 4900 -700 60  0001 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 4900 -700 60  0001 C CNN
 F 3 "" H 4900 -700 60  0001 C CNN
 	1    4900 -700
 	1    0    0    -1  
@@ -3547,7 +3554,7 @@ U 1 1 597198B8
 P 6300 -700
 F 0 "T4" H 6500 -600 60  0000 C CNN
 F 1 "Phoenix_Contact_1935187" H 6850 -450 60  0000 C CNN
-F 2 "" H 6300 -700 60  0001 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 6300 -700 60  0001 C CNN
 F 3 "" H 6300 -700 60  0001 C CNN
 	1    6300 -700
 	1    0    0    -1  
@@ -3588,28 +3595,28 @@ Wire Notes Line
 $Comp
 L PWR_FLAG #FLG048
 U 1 1 59722FC4
-P 7550 1800
-F 0 "#FLG048" H 7550 1875 50  0001 C CNN
-F 1 "PWR_FLAG" H 7550 1950 50  0000 C CNN
-F 2 "" H 7550 1800 50  0001 C CNN
-F 3 "" H 7550 1800 50  0001 C CNN
-	1    7550 1800
+P 7600 1800
+F 0 "#FLG048" H 7600 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 7600 1950 50  0000 C CNN
+F 2 "" H 7600 1800 50  0001 C CNN
+F 3 "" H 7600 1800 50  0001 C CNN
+	1    7600 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 7550 1800 3    30   Input ~ 0
+Text GLabel 7600 1800 0    30   Input ~ 0
 myRIO_12V
 $Comp
 L PWR_FLAG #FLG049
 U 1 1 59722053
-P 7950 1800
-F 0 "#FLG049" H 7950 1875 50  0001 C CNN
-F 1 "PWR_FLAG" H 7950 1950 50  0000 C CNN
-F 2 "" H 7950 1800 50  0001 C CNN
-F 3 "" H 7950 1800 50  0001 C CNN
-	1    7950 1800
+P 8150 1800
+F 0 "#FLG049" H 8150 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 8150 1950 50  0000 C CNN
+F 2 "" H 8150 1800 50  0001 C CNN
+F 3 "" H 8150 1800 50  0001 C CNN
+	1    8150 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 7950 1800 3    39   Input ~ 0
+Text GLabel 8150 1800 0    39   Input ~ 0
 battery+fuse
 $Comp
 L PWR_FLAG #FLG050
@@ -3622,6 +3629,238 @@ F 3 "" H 7150 1800 50  0001 C CNN
 	1    7150 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 7150 1800 3    39   Input ~ 0
+Text GLabel 7150 1800 0    39   Input ~ 0
 battery
+$Comp
+L R R33
+U 1 1 59787DC0
+P 10650 5900
+F 0 "R33" V 10730 5900 50  0000 C CNN
+F 1 "2K" V 10650 5900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 10580 5900 50  0001 C CNN
+F 3 "" H 10650 5900 50  0000 C CNN
+	1    10650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 6050 10650 6150
+Text GLabel 10100 6150 3    30   Input ~ 0
+DGND
+Text GLabel 10000 5350 0    30   Input ~ 0
+main_laser2
+$Comp
+L R R31
+U 1 1 59789155
+P 10100 5500
+F 0 "R31" V 10180 5500 50  0000 C CNN
+F 1 "12K" V 10100 5500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 10030 5500 50  0001 C CNN
+F 3 "" H 10100 5500 50  0000 C CNN
+	1    10100 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 10200 5700 2    30   Input ~ 0
+laser_digital2
+Wire Wire Line
+	10100 5650 10100 5750
+Wire Wire Line
+	10100 5700 10200 5700
+Connection ~ 10100 5700
+Wire Wire Line
+	10000 5350 10100 5350
+$Comp
+L R R32
+U 1 1 59789160
+P 10100 5900
+F 0 "R32" V 10180 5900 50  0000 C CNN
+F 1 "2K" V 10100 5900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 10030 5900 50  0001 C CNN
+F 3 "" H 10100 5900 50  0000 C CNN
+	1    10100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 6050 10100 6150
+Text GLabel 1850 4600 0    30   Input ~ 0
+laser_digital2
+Text GLabel 5600 9950 0    30   Input ~ 0
+24V
+Text GLabel 5600 10050 0    30   Input ~ 0
+DGND
+Text GLabel 5600 10250 0    30   Input ~ 0
+main_laser2
+NoConn ~ 22050 800 
+$Comp
+L C C5
+U 1 1 5978666D
+P 7600 1950
+F 0 "C5" H 7625 2050 50  0000 L CNN
+F 1 "C" H 7625 1850 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7638 1800 50  0001 C CNN
+F 3 "" H 7600 1950 50  0001 C CNN
+	1    7600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 59786811
+P 7150 1950
+F 0 "C3" H 7175 2050 50  0000 L CNN
+F 1 "C" H 7175 1850 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7188 1800 50  0001 C CNN
+F 3 "" H 7150 1950 50  0001 C CNN
+	1    7150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 597869BE
+P 8000 1350
+F 0 "C6" H 8025 1450 50  0000 L CNN
+F 1 "C" H 8025 1250 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 8038 1200 50  0001 C CNN
+F 3 "" H 8000 1350 50  0001 C CNN
+	1    8000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 59786B84
+P 7500 1350
+F 0 "C4" H 7525 1450 50  0000 L CNN
+F 1 "C" H 7525 1250 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7538 1200 50  0001 C CNN
+F 3 "" H 7500 1350 50  0001 C CNN
+	1    7500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 59786D3B
+P 7050 1400
+F 0 "C2" H 7075 1500 50  0000 L CNN
+F 1 "C" H 7075 1300 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7088 1250 50  0001 C CNN
+F 3 "" H 7050 1400 50  0001 C CNN
+	1    7050 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1500 8000 1500
+Wire Wire Line
+	7150 1550 7150 1500
+Wire Wire Line
+	6650 1550 7150 1550
+Connection ~ 7500 1500
+Connection ~ 6650 1550
+Connection ~ 7050 1550
+Wire Wire Line
+	6800 2100 6800 1750
+Wire Wire Line
+	6800 1750 6650 1750
+$Comp
+L C C7
+U 1 1 5978A2F0
+P 8000 3000
+F 0 "C7" H 8025 3100 50  0000 L CNN
+F 1 "C" H 8025 2900 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 8038 2850 50  0001 C CNN
+F 3 "" H 8000 3000 50  0001 C CNN
+	1    8000 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5978A917
+P 6550 2850
+F 0 "C1" H 6575 2950 50  0000 L CNN
+F 1 "C" H 6575 2750 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 6588 2700 50  0001 C CNN
+F 3 "" H 6550 2850 50  0001 C CNN
+	1    6550 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C9
+U 1 1 5978C27D
+P 9600 2950
+F 0 "C9" H 9625 3050 50  0000 L CNN
+F 1 "C" H 9625 2850 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 9638 2800 50  0001 C CNN
+F 3 "" H 9600 2950 50  0001 C CNN
+	1    9600 2950
+	0    1    1    0   
+$EndComp
+Text GLabel 6550 2700 2    30   Input ~ 0
+DGND
+Text GLabel 7850 3000 1    30   Input ~ 0
+DGND
+Text GLabel 9450 2950 1    30   Input ~ 0
+DGND
+Wire Wire Line
+	6800 2100 7650 2100
+Connection ~ 7150 2100
+Connection ~ 7600 2100
+$Comp
+L R R34
+U 1 1 597F3813
+P 13950 7900
+F 0 "R34" V 14030 7900 50  0000 C CNN
+F 1 "R" V 13950 7900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13880 7900 50  0001 C CNN
+F 3 "" H 13950 7900 50  0000 C CNN
+	1    13950 7900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C8
+U 1 1 597F6179
+P 14250 7900
+F 0 "C8" H 14275 8000 50  0000 L CNN
+F 1 "C" H 14275 7800 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 14288 7750 50  0001 C CNN
+F 3 "" H 14250 7900 50  0001 C CNN
+	1    14250 7900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14650 7500 14650 7550
+Wire Wire Line
+	14650 7550 15050 7550
+Wire Wire Line
+	15050 7550 15050 7900
+Wire Wire Line
+	15050 7900 14400 7900
+$Comp
+L D D21
+U 1 1 597FC3BB
+P 15050 8050
+F 0 "D21" H 15050 8150 50  0000 C CNN
+F 1 "D" H 15050 7950 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 15050 8050 50  0001 C CNN
+F 3 "" H 15050 8050 50  0000 C CNN
+	1    15050 8050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR051
+U 1 1 597FD891
+P 15050 8200
+F 0 "#PWR051" H 15050 7950 50  0001 C CNN
+F 1 "GND" H 15050 8050 50  0000 C CNN
+F 2 "" H 15050 8200 50  0000 C CNN
+F 3 "" H 15050 8200 50  0000 C CNN
+	1    15050 8200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2600 1150
+NoConn ~ 5700 12800
+Text Notes 8200 1350 0    60   ~ 0
+check
+Text Notes 13500 7250 0    60   ~ 0
+check - why is the r connected to coil negative
+Wire Wire Line
+	13700 7650 13700 7900
+Wire Wire Line
+	13700 7900 13800 7900
 $EndSCHEMATC
