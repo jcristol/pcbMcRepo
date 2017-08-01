@@ -1476,10 +1476,6 @@ Text GLabel 14650 7500 2    30   Input ~ 0
 2way_open_3
 Text GLabel 13700 7500 0    30   Input ~ 0
 2way_ctrl_3_coil-
-Text GLabel 13700 7650 0    30   Input ~ 0
-24V_activation
-Text GLabel 13700 7350 0    30   Input ~ 0
-24V_activation
 $Comp
 L PN2222A Q3
 U 1 1 58DD129F
@@ -2476,8 +2472,6 @@ Text GLabel 6700 11150 2    30   Input ~ 0
 2way_open_3
 Text GLabel 6700 11250 2    30   Input ~ 0
 2way_close_3
-Text GLabel 6700 11350 2    30   Input ~ 0
-DGND
 Text GLabel 6700 11450 2    30   Input ~ 0
 3way_port2_1
 Text GLabel 6700 11550 2    30   Input ~ 0
@@ -2913,17 +2907,6 @@ NoConn ~ 3550 11150
 NoConn ~ 3550 11700
 NoConn ~ -250 11100
 NoConn ~ -250 11600
-$Comp
-L LED-RESCUE-myrio_pcb D23
-U 1 1 596FFCA6
-P 9100 1300
-F 0 "D23" H 9100 1400 50  0000 C CNN
-F 1 "LED" H 9100 1200 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 9100 1300 50  0001 C CNN
-F 3 "" H 9100 1300 50  0000 C CNN
-	1    9100 1300
-	0    -1   -1   0   
-$EndComp
 $Comp
 L R R21
 U 1 1 597018D1
@@ -3846,10 +3829,68 @@ NoConn ~ 2600 1150
 NoConn ~ 5700 12800
 Text Notes 8200 1350 0    60   ~ 0
 check
-Text Notes 13500 7250 0    60   ~ 0
-check - why is the r connected to coil negative
 Wire Wire Line
 	13700 7650 13700 7900
 Wire Wire Line
 	13700 7900 13800 7900
+$Comp
+L LED D23
+U 1 1 598149AC
+P 9100 1350
+F 0 "D23" H 9100 1450 50  0000 C CNN
+F 1 "LED" H 9100 1250 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 9100 1350 50  0001 C CNN
+F 3 "" H 9100 1350 50  0001 C CNN
+	1    9100 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 1100 9100 1200
+$Comp
+L Phoenix_Contact_1935187 T5
+U 1 1 59817211
+P 3400 -1650
+F 0 "T5" H 3600 -1550 60  0000 C CNN
+F 1 "Phoenix_Contact_1935187" H 3950 -1400 60  0000 C CNN
+F 2 "footprints:Phoenix_Contact_1935187" H 3400 -1650 60  0001 C CNN
+F 3 "" H 3400 -1650 60  0001 C CNN
+	1    3400 -1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 -1450 3    30   Input ~ 0
+SolenoidPower
+$Comp
+L GND #PWR053
+U 1 1 59820BF0
+P 3750 -1450
+F 0 "#PWR053" H 3750 -1700 50  0001 C CNN
+F 1 "GND" H 3750 -1600 50  0000 C CNN
+F 2 "" H 3750 -1450 50  0001 C CNN
+F 3 "" H 3750 -1450 50  0001 C CNN
+	1    3750 -1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 -1450 3    30   Input ~ 0
+12V
+Text GLabel 13700 7350 0    30   Input ~ 0
+SolenoidPower
+Text GLabel 13700 7650 0    30   Input ~ 0
+SolenoidPower
+Text GLabel 4100 -1450 3    30   Input ~ 0
+SolenoidGround
+Text GLabel 9750 1550 3    30   Input ~ 0
+SolenoidGround
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 598311D7
+P 9750 1550
+F 0 "#FLG?" H 9750 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 9750 1700 50  0000 C CNN
+F 2 "" H 9750 1550 50  0001 C CNN
+F 3 "" H 9750 1550 50  0001 C CNN
+	1    9750 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 11350 2    30   Input ~ 0
+SolenoidGround
 $EndSCHEMATC
