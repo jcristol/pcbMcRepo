@@ -3790,38 +3790,10 @@ F 3 "" H 9100 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9100 1100 9100 1200
-$Comp
-L Phoenix_Contact_1935187 T5
-U 1 1 59817211
-P 3400 -1650
-F 0 "T5" H 3600 -1550 60  0000 C CNN
-F 1 "Phoenix_Contact_1935187" H 3950 -1400 60  0000 C CNN
-F 2 "footprints:Phoenix_Contact_1935187" H 3400 -1650 60  0001 C CNN
-F 3 "" H 3400 -1650 60  0001 C CNN
-	1    3400 -1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR053
-U 1 1 59820BF0
-P 3750 -1450
-F 0 "#PWR053" H 3750 -1700 50  0001 C CNN
-F 1 "GND" H 3750 -1600 50  0000 C CNN
-F 2 "" H 3750 -1450 50  0001 C CNN
-F 3 "" H 3750 -1450 50  0001 C CNN
-	1    3750 -1450
-	1    0    0    -1  
-$EndComp
-Text GLabel 3400 -1450 3    30   Input ~ 0
-12V
 Text GLabel 13700 7350 0    30   Input ~ 0
 24V_activation
 Text GLabel 13700 7650 0    30   Input ~ 0
 24V_activation
 Text GLabel 6700 11350 2    30   Input ~ 0
 DGND
-NoConn ~ 4100 -1450
-NoConn ~ 4450 -1450
-Text Notes 2400 -2100 0    60   ~ 0
-Don't know what the 12V and Gnd signal is for here?
 $EndSCHEMATC
