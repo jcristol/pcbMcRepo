@@ -3773,66 +3773,10 @@ Wire Wire Line
 	6800 2100 7650 2100
 Connection ~ 7150 2100
 Connection ~ 7600 2100
-$Comp
-L R R34
-U 1 1 597F3813
-P 13950 7900
-F 0 "R34" V 14030 7900 50  0000 C CNN
-F 1 "R" V 13950 7900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13880 7900 50  0001 C CNN
-F 3 "" H 13950 7900 50  0000 C CNN
-	1    13950 7900
-	0    1    1    0   
-$EndComp
-$Comp
-L C C8
-U 1 1 597F6179
-P 14250 7900
-F 0 "C8" H 14275 8000 50  0000 L CNN
-F 1 "C" H 14275 7800 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 14288 7750 50  0001 C CNN
-F 3 "" H 14250 7900 50  0001 C CNN
-	1    14250 7900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14650 7500 14650 7550
-Wire Wire Line
-	14650 7550 15050 7550
-Wire Wire Line
-	15050 7550 15050 7900
-Wire Wire Line
-	15050 7900 14400 7900
-$Comp
-L D D21
-U 1 1 597FC3BB
-P 15050 8050
-F 0 "D21" H 15050 8150 50  0000 C CNN
-F 1 "D" H 15050 7950 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 15050 8050 50  0001 C CNN
-F 3 "" H 15050 8050 50  0000 C CNN
-	1    15050 8050
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR051
-U 1 1 597FD891
-P 15050 8200
-F 0 "#PWR051" H 15050 7950 50  0001 C CNN
-F 1 "GND" H 15050 8050 50  0000 C CNN
-F 2 "" H 15050 8200 50  0000 C CNN
-F 3 "" H 15050 8200 50  0000 C CNN
-	1    15050 8200
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2600 1150
 NoConn ~ 5700 12800
 Text Notes 8200 1350 0    60   ~ 0
 check
-Wire Wire Line
-	13700 7650 13700 7900
-Wire Wire Line
-	13700 7900 13800 7900
 $Comp
 L LED D23
 U 1 1 598149AC
@@ -3857,8 +3801,6 @@ F 3 "" H 3400 -1650 60  0001 C CNN
 	1    3400 -1650
 	1    0    0    -1  
 $EndComp
-Text GLabel 4450 -1450 3    30   Input ~ 0
-SolenoidPower
 $Comp
 L GND #PWR053
 U 1 1 59820BF0
@@ -3873,24 +3815,13 @@ $EndComp
 Text GLabel 3400 -1450 3    30   Input ~ 0
 12V
 Text GLabel 13700 7350 0    30   Input ~ 0
-SolenoidPower
+24V_activation
 Text GLabel 13700 7650 0    30   Input ~ 0
-SolenoidPower
-Text GLabel 4100 -1450 3    30   Input ~ 0
-SolenoidGround
-Text GLabel 9750 1550 3    30   Input ~ 0
-SolenoidGround
-$Comp
-L PWR_FLAG #FLG?
-U 1 1 598311D7
-P 9750 1550
-F 0 "#FLG?" H 9750 1625 50  0001 C CNN
-F 1 "PWR_FLAG" H 9750 1700 50  0000 C CNN
-F 2 "" H 9750 1550 50  0001 C CNN
-F 3 "" H 9750 1550 50  0001 C CNN
-	1    9750 1550
-	1    0    0    -1  
-$EndComp
+24V_activation
 Text GLabel 6700 11350 2    30   Input ~ 0
-SolenoidGround
+DGND
+NoConn ~ 4100 -1450
+NoConn ~ 4450 -1450
+Text Notes 2400 -2100 0    60   ~ 0
+Don't know what the 12V and Gnd signal is for here?
 $EndSCHEMATC
