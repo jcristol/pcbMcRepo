@@ -10,4 +10,4 @@ A hearty and fully functional meal from the fryer of Texas Guadaloop Industries 
 
 ### Picture of the PCB
 
-![pcb-picture](/Users/JoshuaCristol/pspace/pcbMcRepo/pcb-picture.png)
+![pcb-picture](pcb-picture.png)
