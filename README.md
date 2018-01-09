@@ -3,18 +3,11 @@ A hearty and fully functional meal from the fryer of Texas Guadaloop Industries 
 
 
 
-### Design Comments feel free to edit
+- See the circuit schematic look at .sch files
+- See the PCB layout look at .pcb files
+- Open these files I suggest you use KiCAD
+- The circuit below is the myrio circuit
 
+### Picture of the PCB
 
-- aparently the battery labels are screw up fix that(cody)
-
-### TODO Cody
-
-- extra screw terminal for extra battery and solenoid
-- take out the switch
-- move shit around for that
-- also move the screw terminals closer together so the link
-
-
-
-
+![pcb-picture](/Users/JoshuaCristol/pspace/pcbMcRepo/pcb-picture.png)
